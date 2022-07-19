@@ -1,0 +1,16 @@
+---
+permalink: concept-deployment-workflow.html 
+sidebar: sidebar 
+keywords: manage, monitor, storage, systems, smi-s provider, software, validate, preliminary, configuration 
+summary: Bevor Sie Ihre Speichersysteme mit SMI-S Provider verwalten und überwachen können, müssen Sie die SMI-S Provider-Software installieren und Ihre vorläufige Konfiguration überprüfen. 
+---
+= Implementierungs-Workflow
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie Ihre Speichersysteme mit SMI-S Provider verwalten und überwachen können, müssen Sie die SMI-S Provider-Software installieren und Ihre vorläufige Konfiguration überprüfen.
+
+image::../media/smi_s_provider_workflow.gif[workflow für smi-Provider]

@@ -1,0 +1,68 @@
+---
+permalink: reference-cimconfig-command-options.html 
+sidebar: sidebar 
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command 
+summary: Sie können den Befehl cimconfig verwenden, um CIMOM-Konfigurationseinstellungen zu verwalten. Nach Eingabe des Befehls cimconfig oder Erstellen einer Umgebungsvariable für den NetApp SMI-S Provider-Konfigurationswert müssen Sie den CIM-Server über den Befehl sbis cimserver restart neu starten. 
+---
+= Zimconfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können das verwenden `cimconfig` Befehl zum Konfigurieren von CIMOM-Einstellungen, z. B. Aktivieren und Deaktivieren von HTTP und HTTPS sowie Ändern der HTTP- und HTTPS-Port-Nummern. Nach Eingabe des `cimconfig` Befehl oder Erstellen einer Umgebungsvariable für den Konfigurationswert von NetApp SMI-S Provider müssen Sie den CIM-Server mithilfe der neu starten `smis cimserver restart` Befehl.
+
+`cimconfig _options_`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrator (Windows)
+
+.Optionen
+* *-c*
++
+Gibt an, dass die Konfigurationseinstellung für die aktuelle CIMOM-Konfiguration gilt.
+
+* *-d*
++
+Gibt an, dass die Konfigurationseinstellung für die Standard-CIMOM-Konfiguration gilt.
+
+* *-g*
++
+Ruft den Wert einer angegebenen Konfigurationseigenschaft ab.
+
+* *-h, --help*
++
+Zeigt die Hilfe für das an `cimconfig` Befehl.
+
+* *-l*
++
+Listet alle CIMOM-Konfigurationseigenschaften auf.
+
+* *-p*
++
+Gibt an, dass die Konfigurationseinstellung beim nächsten Start des CIM-Servers angewendet wird.
+
+* *-s*
++
+Legt den angegebenen Wert für die Konfigurationseigenschaft fest.
+
+* *-U*
++
+Setzt die Konfigurationseigenschaft auf den Standardwert zurück.
+
+* *--Version*
++
+Zeigt die Version des CIM-Servers an.
+
+
+
+Ändern Sie die maximale Protokolldateigröße auf 15000 KB:
+
+[listing]
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

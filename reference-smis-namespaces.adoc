@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-namespaces.html 
+sidebar: sidebar 
+keywords: smis namespace, command, list, registered, namespace, cimom 
+summary: Der Befehl sbis Namespaces listet die registrierten Namespaces für das CIMOM auf. 
+---
+= smis Namespaces
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Der `smis namespaces` Der Befehl listet die registrierten Namespaces für das CIMOM auf.
+
+smis Namespaces
+
+`[-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+* Windows: `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+
+Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
+
+.Parameter
+* `*[-t {http | https}]*`
++
+Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
+
+
+
+Der `smis namespaces` Befehl und seine gekürzte Ausgabe:
+
+[listing]
+----
+smis namespaces
+interop
+root/ontap
+----

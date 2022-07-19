@@ -1,0 +1,33 @@
+---
+permalink: reference-network-path-not-found-error-during-vm-deployment.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Probleme bei NetApp SMI-S Provider. 
+---
+= Der Netzwerkpfad wurde nicht gefunden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Nachricht*
++
+`Network path not found`
+
+* *Beschreibung*
++
+Diese Meldung spiegelt ein DNS-Problem wider und tritt während der VM-Bereitstellung auf einer SMB-Freigabe auf, wenn der Host keinen Eintrag auf dem DNS-Server hat.
+
++
+Normalerweise sollte der Domain-DNS-Server den Hostdatensatz innerhalb von 24 bis 48 Stunden automatisch aktualisieren, wenn ein neuer Host in der Domäne konfiguriert ist. Dieses Update geschieht jedoch nicht immer automatisch.
+
+* *Korrekturmaßnahmen*
++
+** Wenn Sie ein Domänenadministrator sind, aktualisieren Sie den DNS-Hostdatensatz manuell.
+** Wenn Sie kein Domänenadministrator sind, aktualisieren Sie die Hostdatei (`C:\Windows\System32\drivers\etc\hosts`).
++
+Die Host-Datei hat keine Dateierweiterung (`.txt`).
+
+
+
+

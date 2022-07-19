@@ -1,0 +1,32 @@
+---
+permalink: concept-smi-s-provider-commands-overview.html 
+sidebar: sidebar 
+keywords: smis, commands, manage, storage, system, display, cim object manager 
+summary: Sie können die smis-Befehle zum Verwalten von Speichersystemen und zum Anzeigen von Informationen zum CIM-Objektmanager verwenden. 
+---
+= Überblick
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können das verwenden `smis` Befehle zum Verwalten von Storage-Systemen und zum Anzeigen von Informationen über den CIM-Objektmanager.
+
+Hilfe ist für das verfügbar `smis` Befehl mit dem `-help` Option.
+
+* *Smis `-help`*
++
+Zeigt eine Befehlsübersicht an.
+
+* *Smis `-help` Beispiele*
++
+Zeigt Anwendungsbeispiele an.
+
+* *Smis `-help _subcommand_`*
++
+Zeigt die Hilfe für den angegebenen Unterbefehl an.
+
+
+
+Der Standard-Timeout-Wert für das sbis-Werkzeug beträgt 180 Sekunden.

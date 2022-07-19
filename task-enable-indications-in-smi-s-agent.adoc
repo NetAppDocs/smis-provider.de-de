@@ -1,0 +1,30 @@
+---
+permalink: task-enable-indications-in-smi-s-agent.html 
+sidebar: sidebar 
+keywords: netApp smi-s provider, lifecycle, disable, default, indication 
+summary: Warnmeldungen, Dateikontingente und Lifecycle-Angaben sind standardmäßig deaktiviert. Sie können diese Indikationen aktivieren, indem Sie die Umgebungsvariable PEGASUS_DISABLE_INDICCATIONS auf false setzen. 
+---
+= Aktivieren Sie die Indikationen im SMI-S-Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Warnmeldungen, Dateikontingente und Lifecycle-Angaben sind standardmäßig deaktiviert. Sie können diese Indikationen aktivieren, indem Sie die Umgebungsvariable einstellen `PEGASUS_DISABLE_INDICATIONS` Bis `false`.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+Wenn `PEGASUS_DISABLE_INDICATIONS` Ist auf festgelegt `false`, Dann Warnung (`ONTAP_AlertIndication`), Dateisystemkontingente (`ONTAP_FSQuotaIndication`) Und Lifecycle-Indikationen sind für NetApp SMI-S Provider aktiviert.
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Stellen Sie die ein `PEGASUS_DISABLE_INDICATIONS` Umgebungsvariable auf `false`.
+. Starten Sie den CIM-Server neu:
++
+`*smis cimserver restart*`
+
+

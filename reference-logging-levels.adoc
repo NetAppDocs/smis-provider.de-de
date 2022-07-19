@@ -1,0 +1,38 @@
+---
+permalink: reference-logging-levels.html 
+sidebar: sidebar 
+keywords: messages, specify, logged 
+summary: 'Sie können die Arten von Meldungen angeben, die protokolliert werden (z. B. sollen nur tödliche Systemmeldungen protokolliert werden).' 
+---
+= Protokollierungsstufen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die Arten von Meldungen angeben, die protokolliert werden (z. B. sollen nur tödliche Systemmeldungen protokolliert werden).
+
+Sie können die Protokollierungsebene auf eine der folgenden Optionen konfigurieren:
+
+* *TRACE*
++
+Speichert Trace-Meldungen im cimserver_Standard-Protokoll.
+
+* * INFORMATION*
++
+Protokolliert alle (Informations-, Warn-, schweren und tödlichen) Systemmeldungen.
+
+* *WARNUNG*
++
+Protokolliert Warnungen, schwere und tödliche Systemmeldungen.
+
+* *SCHWERWIEGEND*
++
+Protokolliert schwerwiegende und tödliche Systemmeldungen
+
+* * TÖDLICH*
++
+Protokolliert nur fatale Systemmeldungen.
+
+

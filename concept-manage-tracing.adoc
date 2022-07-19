@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-tracing.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace, files, components, trace, write, trace, file location 
+summary: Sie können konfigurieren, wie SMI-S Provider Trace-Dateien verwaltet, z. B. die zu rückverfolgenden Komponenten, das Ziel, auf das Trace-Nachrichten geschrieben werden, die Ebene der Verfolgung und den Speicherort der Trace-Datei. 
+---
+= Ablaufverfolgung verwalten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können konfigurieren, wie SMI-S Provider Trace-Dateien verwaltet, z. B. die zu rückverfolgenden Komponenten, das Ziel, auf das Trace-Nachrichten geschrieben werden, die Ebene der Verfolgung und den Speicherort der Trace-Datei.

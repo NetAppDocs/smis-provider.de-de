@@ -1,0 +1,51 @@
+---
+permalink: task-enable-or-disable-authentication-for-smi-s-provider.html 
+sidebar: sidebar 
+keywords: smi-s provider, authentication, enable, errors, system, disable 
+summary: Standardmäßig ist die Authentifizierung für SMI-S Provider aktiviert. Wenn die Authentifizierung Fehler auf dem System verursacht, können Sie diese optional deaktivieren. Wenn die Authentifizierung deaktiviert wurde und Sie sie erneut aktivieren möchten, können Sie dies tun. 
+---
+= Aktivieren oder deaktivieren Sie die Authentifizierung für NetApp SMI-S Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Standardmäßig ist die Authentifizierung für SMI-S Provider aktiviert. Wenn die Authentifizierung Fehler auf dem System verursacht, können Sie diese optional deaktivieren. Wenn die Authentifizierung deaktiviert wurde und Sie sie erneut aktivieren möchten, können Sie dies tun.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator angemeldet haben.
+* Alle Clients, einschließlich System Center Virtual Machine Manager (SCVMM), müssen mit dem Anbieter verbunden sein, der cimuser und cimpassword verwendet.
+
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Legen Sie die Authentifizierung für SMI-S Provider fest:
++
+[cols="2*"]
+|===
+| Aktion | Befehl 
+
+
+ a| 
+*Authentifizierung aktivieren, wenn zuvor deaktiviert*
+ a| 
+`*cimconfig -p -s enableAuthentication=true*`
+
+
+
+ a| 
+*Authentifizierung deaktivieren*
+ a| 
+`*cimconfig -p -s enableAuthentication=false*`
+
+|===
++
+CIMOM verwendet keine Windows-Authentifizierung.
+
+. NetApp SMI-S Provider neu starten:
++
+`*smis cimserver restart*`
+
+

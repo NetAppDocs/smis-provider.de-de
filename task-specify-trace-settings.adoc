@@ -1,0 +1,61 @@
+---
+permalink: task-specify-trace-settings.html 
+sidebar: sidebar 
+keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact 
+summary: Die Aktivierung der Ablaufverfolgung ist wichtig, um Informationen zur Fehlerbehebung zu sammeln. Die Aktivierung der Nachverfolgung kann sich jedoch auf die Leistung auswirken. Überlegen Sie daher genau, was verfolgt werden muss und wie lange Sie die Verfolgung aktivieren müssen. 
+---
+= Festlegen von Trace-Einstellungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die Aktivierung der Ablaufverfolgung ist wichtig, um Informationen zur Fehlerbehebung zu sammeln. Die Aktivierung der Nachverfolgung kann sich jedoch auf die Leistung auswirken. Überlegen Sie daher genau, was verfolgt werden muss und wie lange Sie die Verfolgung aktivieren müssen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Geben Sie je nach Bedarf verschiedene Trace-Einstellungen an:
++
+[cols="2*"]
+|===
+| Aktion | Befehl 
+
+
+ a| 
+Geben Sie die Komponenten an, die verfolgt werden sollen
+ a| 
+`*cimconfig -s traceComponents=_components_ -p*`
+
+
+
+ a| 
+Geben Sie die Trace-Funktion an
+ a| 
+`*cimconfig -s traceFacility=_facility_ -p*`
+
+
+
+ a| 
+Geben Sie den Speicherort der Trace-Datei an
+ a| 
+`*cimconfig -s traceFilePath=_path_name_ -p*`
+
+
+
+ a| 
+Geben Sie die Trace-Ebene an
+ a| 
+`*cimconfig -s traceLevel=_level_ -p*`
+
+|===
+. Starten Sie den CIM-Server neu:
++
+`*smis cimserver restart*`
+
+

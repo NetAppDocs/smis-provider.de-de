@@ -1,0 +1,128 @@
+---
+permalink: task-manage-storage-systems.html 
+sidebar: sidebar 
+keywords: smi-s provider, commands, add, delete, list, storage, systems, cimom repository 
+summary: Mithilfe von NetApp SMI-S Provider-Befehlen können Speichersysteme im CIMOM-Repository hinzugefügt, gelöscht und aufgelistet werden. Sie können auch NFS- und CIFS-Exporte und exportierte LUNs für Storage-Systeme auflisten. 
+---
+= Management von Storage-Systemen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mithilfe von NetApp SMI-S Provider-Befehlen können Speichersysteme im CIMOM-Repository hinzugefügt, gelöscht und aufgelistet werden. Sie können auch NFS- und CIFS-Exporte und exportierte LUNs für Storage-Systeme auflisten.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+Bei ONTAP müssen Sie eine Management-IP-Adresse für eine SVM und keine Cluster-IP-Adresse angeben und die Anmeldedaten für einen vsadmin-Benutzer angeben. SMI-S-Provider unterstützt keine Cluster-IP-Adressen oder Node-Management-IP-Adressen und unterstützt weder Node-Admin noch Node-SVMs.
+
+[NOTE]
+====
+Sie sollten den Wert des Datenprotokolls auf setzen `none` Für die Management-LIF, wenn Sie sie zum SMI-S Provider hinzufügen.
+
+====
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Führen Sie eine der folgenden Aktionen durch:
++
+[cols="3*"]
+|===
+| Aktion | Befehl | Weitere Informationen 
+
+
+ a| 
+Fügen Sie ein Speichersystem mit einer HTTP-Verbindung zwischen dem Anbieter und dem Speichersystem hinzu
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+ a| 
+Der Befehl wartet bis zu 15 Minuten, bis der Provider den Cache aktualisiert und antwortet.
+
+
+
+ a| 
+Fügen Sie ein Speichersystem mit einer HTTPS-Verbindung zwischen dem Provider und dem Speichersystem hinzu
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+ a| 
+Der Befehl wartet bis zu 15 Minuten, bis der Provider den Cache aktualisiert und antwortet.
+
+
+
+ a| 
+Listen Sie NFS- und CIFS-Exporte für ein Storage-System auf
+ a| 
+`*smis exports*`
+ a| 
+Keine
+
+
+
+ a| 
+Listen Sie die Speichersysteme für das CIMOM-Repository auf
+ a| 
+`*smis list*`
+ a| 
+Sie können diesen Befehl ausführen, um die Speichersysteme im CIMOM-Repository zu überprüfen, bevor Sie Speichersysteme hinzufügen oder löschen.
+
+
+
+ a| 
+Liste der exportierten LUNs für ein Speichersystem
+ a| 
+`*smis luns*`
+ a| 
+Keine
+
+
+
+ a| 
+Löschen eines Speichersystems aus dem CIMOM-Repository
+ a| 
+`*smis delete _storage_sys_*`
+ a| 
+Wenn Sie ein Storage-System nicht mehr managen müssen, können Sie es aus dem CIMOM Repository löschen.
+
+Da SMI-S Provider Informationen aus allen Speichersystemen im CIMOM-Repository erfasst, sollten Sie ein nicht verwendetes Speichersystem aus dem Repository löschen, um eine optimale Leistung zu gewährleisten.
+
+
+
+ a| 
+Die aktuellen Konfigurationsinformationen für den CIM-Server auflisten
+ a| 
+`*smis config show*`
+ a| 
+Keine
+
+
+
+ a| 
+Geben Sie die FC- und iSCSI-Portinformationen für das Storage-System an
+ a| 
+`*smis initiators*`
+ a| 
+Keine
+
+
+
+ a| 
+Listen Sie die Speicherpools für das Speichersystem auf
+ a| 
+`*smis pools*`
+ a| 
+Keine
+
+
+
+ a| 
+Erstellen Sie eine Liste der herkömmlichen und flexiblen Volumes für das Storage-System
+ a| 
+`*smis volumes*`
+ a| 
+Keine
+
+|===
+

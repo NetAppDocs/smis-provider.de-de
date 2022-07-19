@@ -1,0 +1,253 @@
+---
+settings:
+  name: NetApp SMI-S Provider
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: de-de,us-en,ja-jp,zh-cn,zh-tw,ko-kr,fr-fr
+sidebar:
+  entries:
+  - title: NetApp SMI-S-Provider Dokumentation
+    url: "/index.html"
+  - title: Versionshinweise
+    url: "/releasenotes.html"
+  - title: NetApp SMI-S Provider – Übersicht
+    entries:
+    - title: Überblick
+      url: "/concept-overview.html"
+    - title: Neu in dieser Version
+      url: "/reference-new-in-this-release-smis.html"
+    - title: Nutzung des NetApp SMI-S Provider
+      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+    - title: Sizing und Performance für NetApp SMI-S-Provider
+      url: "/reference-smi-s-agent-sizing-and-performance-information.html"
+    - title: NetApp SMI-S Provider-Komponenten
+      url: "/reference-data-ontap-smi-s-agent-components.html"
+    - title: NetApp SMI-S-Provider-Protokolle
+      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+    - title: Wie NetApp SMI-S Provider mit einem Host interagiert
+      url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
+    - title: SMI-S-Profile
+      url: "/concept-smi-s-profiles.html"
+  - title: Implementierungs-Workflow
+    url: "/concept-deployment-workflow.html"
+  - title: Vorbereitungen für die Implementierung
+    entries:
+    - title: Überblick
+      url: "/concept-prepare-for-deployment-overview.html"
+    - title: Unterstützte Betriebssystemversionen
+      url: "/reference-supported-operating-systems.html"
+    - title: Hardwareanforderungen
+      url: "/reference-hardware-requirements.html"
+    - title: Erforderliche Lizenzen
+      url: "/reference-required-licenses.html"
+    - title: Unterstützte Cluster-Plattformen
+      url: "/reference-supported-platforms.html"
+    - title: Laden Sie das Softwarepaket NetApp SMI-S Provider herunter
+      url: "/task-download-smi-s-provider.html"
+  - title: Installation des NetApp SMI-S Provider
+    entries:
+    - title: Installation des NetApp SMI-S Provider auf einem Windows-Host
+      url: "/task-install-smi-s-agent-on-a-windows-host.html"
+  - title: Deinstallieren Sie NetApp SMI-S Provider
+    entries:
+    - title: Deinstallieren Sie NetApp SMI-S Provider von einem Windows-Host
+      url: "/task-uninstall-smi-s-agent-from-a-windows-host.html"
+  - title: Validierung vor der Konfiguration
+    entries:
+    - title: Überblick
+      url: "/concept-preconfiguration-task-overview.html"
+    - title: Überprüfen Sie den CIM-Serverstatus
+      url: "/task-verify-the-cim-server-status.html"
+    - title: Fügen Sie einen CIM-Serverbenutzer hinzu
+      url: "/task-add-cim-server-users.html"
+    - title: Überprüfen Sie, ob das Storage-System ordnungsgemäß funktioniert
+      url: "/task-verify-that-the-storage-system-is-working-correctly.html"
+    - title: Erstellen eines selbstsignierten Zertifikats für den CIM-Server
+      url: "/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html"
+  - title: Verwalten des CIM-Servers
+    url: "/task-manage-the-cim-server.html"
+  - title: Management von Storage-Systemen
+    url: "/task-manage-storage-systems.html"
+  - title: CIM-Server-Benutzer verwalten
+    entries:
+    - title: Überblick
+      url: "/task-manage-cim-server-users-overview.html"
+    - title: Typen von CIM-Benutzern und zugehörigen Vorgängen
+      url: "/reference-types-of-cim-users-and-associated-operations.html"
+  - title: CIMOM-Konfigurationseinstellungen verwalten
+    url: "/task-manage-cimom-configuration-settings.html"
+  - title: Verwaltung von Protokollierung und Nachverfolgung
+    entries:
+    - title: Überblick
+      url: "/concept-manage-logging-and-tracing-overview.html"
+    - title: Konfigurieren Sie die Protokolleinstellungen
+      url: "/task-configure-log-settings.html"
+      entries:
+      - title: Protokollierungsstufen
+        url: "/reference-logging-levels.html"
+    - title: Ablaufverfolgung verwalten
+      url: "/concept-manage-tracing.html"
+      entries:
+      - title: Festlegen von Trace-Einstellungen
+        url: "/task-specify-trace-settings.html"
+        entries:
+        - title: Werte für die Trace-Einstellung
+          url: "/reference-trace-setting-values.html"
+      - title: Geben Sie die Größe der Trace-Datei an
+        url: "/task-specify-trace-file-size.html"
+      - title: Geben Sie die Anzahl der gespeicherten Trace-Dateien an
+        url: "/task-specify-the-number-of-trace-files-saved.html"
+    - title: Aktivieren oder Deaktivieren des Prüfprotokolls für SMI-S-Befehle
+      url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
+  - title: Verwalten Sie die erweiterten Einstellungen für SMI-S Provider
+    entries:
+    - title: Überblick
+      url: "/concept-manage-smi-s-agent-advanced-settings-overview.html"
+    - title: Geben Sie das Intervall für die automatische Cache-Aktualisierung von
+        SMI-S Provider an
+      url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
+    - title: Geben Sie den konkreten Wert für die Einsatzdauer an
+      url: "/task-specify-the-concrete-job-lifetime-value.html"
+    - title: Geben Sie den ONTAPI-Timeout-Wert an
+      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: Geben Sie die maximale Anzahl von Threads pro Nachrichtendienstwarteschlange
+        an
+      url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
+    - title: Aktivieren oder deaktivieren Sie die Authentifizierung für NetApp SMI-S
+        Provider
+      url: "/task-enable-or-disable-authentication-for-smi-s-provider.html"
+    - title: Aktivieren Sie die Indikationen im SMI-S-Provider
+      url: "/task-enable-indications-in-smi-s-agent.html"
+  - title: SLP verwalten
+    entries:
+    - title: Überblick
+      url: "/concept-manage-slp-overview.html"
+    - title: Legen Sie die Optionen für die SLP-Konfiguration fest
+      url: "/concept-specify-slp-configuration-options.html"
+      entries:
+      - title: slp.conf Dateiverwaltung
+        url: "/reference-editing-the-slp-conf-file.html"
+  - title: CIMOM-Befehle
+    entries:
+    - title: Zimconfig
+      url: "/reference-cimconfig-command-options.html"
+  - title: CIM-Benutzerbefehle
+    entries:
+    - title: cimuser
+      url: "/reference-cimuser-command-options.html"
+  - title: SMI-S Provider-Befehle
+    entries:
+    - title: Überblick
+      url: "/concept-smi-s-provider-commands-overview.html"
+    - title: smis hinzufügen
+      url: "/reference-smis-add.html"
+    - title: smis addSecure
+      url: "/reference-smis-addsecure.html"
+    - title: smis cimom
+      url: "/reference-smis-cimom.html"
+    - title: smis Cimserver
+      url: "/reference-smis-cimserver.html"
+    - title: smis-Klasse
+      url: "/reference-smis-class.html"
+    - title: smis config show
+      url: "/reference-smis-config-show.html"
+    - title: smis crp
+      url: "/reference-smis-crp.html"
+    - title: smis crsp
+      url: "/reference-smis-crsp.html"
+    - title: smis löschen
+      url: "/reference-smis-delete.html"
+    - title: smis-Festplatten
+      url: "/reference-smis-disks.html"
+    - title: smis-Exporte
+      url: "/reference-smis-exports.html"
+    - title: smis-Initiatoren
+      url: "/reference-smis-initiators.html"
+    - title: smis lizenziert
+      url: "/reference-smis-licensed.html"
+    - title: smis-Liste
+      url: "/reference-smis-list.html"
+    - title: smis luns
+      url: "/reference-smis-luns.html"
+    - title: smis Namespaces
+      url: "/reference-smis-namespaces.html"
+    - title: smis-Pools
+      url: "/reference-smis-pools.html"
+    - title: smis-Aktualisierung
+      url: "/reference-smis-refresh.html"
+    - title: smis slpd
+      url: "/reference-smis-slpd.html"
+    - title: smis-Version
+      url: "/reference-smis-version.html"
+    - title: smis Volumes
+      url: "/reference-smis-volumes.html"
+  - title: SLP-Befehle
+    entries:
+    - title: Slptool
+      url: "/reference-slptool-command-options.html"
+    - title: Slptool Findattrs
+      url: "/reference-slptool-findattrs.html"
+    - title: Slptool findsrvs
+      url: "/reference-slptool-findsrvs.html"
+  - title: Fehler bei SMI-S Provider beheben
+    entries:
+    - title: Überblick
+      url: "/concept-troubleshoot-smi-s-agent-overview.html"
+    - title: Fehler beim Zugriff verweigert
+      url: "/reference-access-is-denied-error.html"
+    - title: Mögliche Fehler beim Laden von gemeinsam genutzten Bibliotheken
+      url: "/reference-possible-errors-when-loading-shared-libraries.html"
+    - title: Verbindung abgelehnt
+      url: "/reference-connection-refused-error.html"
+    - title: 'Filer Rückgabe: Kein ONTAP-Element als Antwort'
+      url: "/reference-no-ontap-element-in-response-error.html"
+    - title: Klon-/Snapshot-Vorgänge sind nicht zulässig
+      url: "/reference-clone-snapshot-operations-are-not-allowed.html"
+    - title: Warnung 26130
+      url: "/reference-warning-26130.html"
+    - title: 'HostAgentAccessDenied (ID: 26263)'
+      url: "/reference-hostagentaccessdenied-error-id-26263.html"
+    - title: Verbindung mit localhost:5988 nicht möglich
+      url: "/reference-cannot-connect-to-localhost-5988-error.html"
+    - title: Verbindung mit localhost:5989 nicht möglich
+      url: "/reference-cannot-connect-to-localhost-5989-error.html"
+    - title: SMI-S Provider stürzt in Windows ab
+      url: "/reference-handling-smi-s-agent-crashes-in-windows.html"
+    - title: Geben Sie Passwörter mit Sonderzeichen ein
+      url: "/reference-entering-passwords-containing-special-characters.html"
+    - title: Im SMI-S Provider verwendete Klontechnologie
+      url: "/concept-clone-technology-used-in-smi-s-agent-4-0.html"
+    - title: Die Sichtbarkeit wichtiger Objekte bestätigen
+      url: "/concept-confirm-visibility-of-important-objects.html"
+    - title: Anforderung für die Verwendung von Dateiservern unter Windows
+      url: "/concept-requirement-for-using-fileshares-in-windows.html"
+    - title: Nicht standardmäßige Firewalls müssen Ports manuell als Ausnahmen hinzugefügt
+        werden
+      url: "/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html"
+    - title: Es kann kein Speichersystem mit einem nicht standardmäßigen HTTP- oder
+        HTTPS-Port hinzugefügt werden
+      url: "/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html"
+    - title: Keine Antwort vom Server
+      url: "/reference-no-response-from-the-server.html"
+    - title: Probleme mit der Laufzeitbibliothek
+      url: "/reference-runtime-library-issues.html"
+    - title: Der NetApp SMI-S Provider kann sehr lange gestartet werden
+      url: "/reference-smi-s-agent-takes-a-long-time-to-start.html"
+    - title: Unstimmigkeiten beim Management des gesamten Speicherplatzes für einen
+        Storage Pool (Volume)
+      url: "/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html"
+    - title: Der Netzwerkpfad wurde nicht gefunden
+      url: "/reference-network-path-not-found-error-during-vm-deployment.html"
+    - title: Es sind nicht genügend Systemressourcen vorhanden, um den angeforderten
+        Service abzuschließen
+      url: "/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html"
+    - title: Die Größe der SMB-Freigabe wird in SCVMM auf 0 verkleinert
+      url: "/reference-smb-share-size-dropping-to-0-in-scvmm.html"
+    - title: Der SCVMM-Scan-Vorgang konnte nicht gefunden oder mit SMI-S-Provider
+        kommunizieren
+      url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
+  - title: Rechtliche Hinweise
+    url: "/reference-legal-notices.html"

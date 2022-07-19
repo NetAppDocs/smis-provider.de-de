@@ -1,0 +1,74 @@
+---
+permalink: reference-smis-class.html 
+sidebar: sidebar 
+keywords: smis class, command, lists, information, 
+summary: Der Befehl smis class listet Informationen über eine bestimmte Klasse oder alle Klassen auf. 
+---
+= smis-Klasse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Der `smis class` Command listet Informationen über eine bestimmte Klasse oder alle Klassen auf.
+
+`smis class`
+
+`_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
+
+.Parameter
+* `*_name_space_*`
++
+Namespace, der vom CIMOM unterstützt wird
+
+* *niall*
++
+Alle Instanznamen auflisten
+
+* *Ei*
++
+Instanzen für eine Klasse auflisten
+
+* * Ni*
++
+Instanznamen für eine Klasse aufzählen
+
+* *gi*
++
+Abrufen von Instanzen für eine Klasse
+
+* *gc*
++
+Klasse für einen Klassennamen abrufen
+
+* `*_class_name_*`
++
+Name der Klasse, für die Sie Informationen wünschen
+
+* `*[-t {http | https}]*`
++
+Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
+
+
+
+Der `smis class` Befehl und seine gekürzte Ausgabe:
+
+[listing]
+----
+smis class root/ontap gi CIM_StorageVolume
+1:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJdC-mN5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+2:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcmzpHt",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+3:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJc30t26",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+4:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgbiT",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+5:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgrA9",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

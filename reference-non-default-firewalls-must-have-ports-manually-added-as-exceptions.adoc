@@ -1,0 +1,30 @@
+---
+permalink: reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Probleme bei NetApp SMI-S Provider. 
+---
+= Nicht standardmäßige Firewalls müssen Ports manuell als Ausnahmen hinzugefügt werden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Ausgabe*
++
+Wenn Sie eine andere Firewall als die standardmäßige Windows-Firewall verwenden, treten möglicherweise die folgenden Probleme auf:
+
++
+** SMI-S Provider kann nicht mit einem entfernten SMI-S-Client kommunizieren.
+** Der SMI-S-Client kann keine Hinweise vom SMI-S-Provider empfangen.
+
+
+* *Ursache*
++
+Dieses Problem tritt auf, wenn Sie eine andere Firewall als die standardmäßige Windows-Firewall verwenden, ohne zuvor die erforderlichen Ports manuell als Ausnahmen hinzuzufügen.
+
+* *Korrekturmaßnahmen*
++
+Fügen Sie Ports 427, 5988 und 5989 als Ausnahmen zu Ihrer Firewall hinzu.
+
+

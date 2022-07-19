@@ -1,0 +1,33 @@
+---
+permalink: task-specify-the-number-of-trace-files-saved.html 
+sidebar: sidebar 
+keywords: trace, enable, seven trace file, pegasus trace file num, system, space 
+summary: Wenn die Ablaufverfolgung aktiviert ist, werden standardmäßig sieben Trace-Dateien gespeichert. Wenn Sie mehr gespeicherte Trace-Dateien benötigen, können Sie die maximale Anzahl der gespeicherten Trace-Dateien erhöhen, indem Sie die Umgebungsvariable PEGASUS_TRACE_FILE_NUM festlegen. Wenn Sie die maximale Anzahl der gespeicherten Trace-Dateien erhöhen, müssen Sie sicherstellen, dass das System über genügend Speicherplatz auf seiner Festplatte verfügt, um die Trace-Dateien aufzunehmen. 
+---
+= Geben Sie die Anzahl der gespeicherten Trace-Dateien an
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn die Ablaufverfolgung aktiviert ist, werden standardmäßig sieben Trace-Dateien gespeichert. Wenn Sie mehr gespeicherte Trace-Dateien benötigen, können Sie die maximale Anzahl der gespeicherten Trace-Dateien erhöhen, indem Sie die Umgebungsvariable einstellen `PEGASUS_TRACE_FILE_NUM`. Wenn Sie die maximale Anzahl der gespeicherten Trace-Dateien erhöhen, müssen Sie sicherstellen, dass das System über genügend Speicherplatz auf seiner Festplatte verfügt, um die Trace-Dateien aufzunehmen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+Wenn die Ablaufverfolgung aktiviert ist, werden die Nachverfolgungsinformationen in das geschrieben `cimserver.trc` Datei: Die Trace-Dateien werden gedreht. Wenn `cimserver.trc` Erreicht die maximale Größe der Trace-Datei, deren Inhalt wird in den verschoben `cimserver.trc._n_` Datei: Standardmäßig ist `n` Ist ein Wert zwischen 0 und 5. Wenn Sie mehr gespeicherte Trace-Dateien benötigen, erhöhen Sie den Wert von `_n_`.
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Erstellen Sie eine System- oder Benutzerumgebvariable mit dem Namen `PEGASUS_TRACE_FILE_NUM` Mit der neuen Anzahl von Trace-Dateien gespeichert.
++
+_Windows-Dokumentation_ enthält weitere Informationen zum Erstellen von Umgebungsvariablen.
+
+. Starten Sie den CIM-Server neu:
++
+`*smis cimserver restart*`
+
+

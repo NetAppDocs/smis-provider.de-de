@@ -1,0 +1,53 @@
+---
+permalink: reference-smis-volumes.html 
+sidebar: sidebar 
+keywords: smis volume, command, list, traditional, storage systems 
+summary: Der Befehl smis Volumes führt die traditionellen und flexiblen Volumes für Speichersysteme auf. 
+---
+= smis Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Der `smis volumes` Mit dem Befehl werden die herkömmlichen und flexiblen Volumes für Storage-Systeme aufgelistet.
+
+`smis volumes`
+
+`[-t {*http* | *https*}]`
+
+[NOTE]
+====
+Für Clustered Data ONTAP müssen Sie den verwenden `smis pools` Befehl anstelle des `smis volumes` Befehl.
+
+====
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
+
+.Parameter
+* `*[-t {http | https}]*`
++
+Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
+
+
+
+Der `smis volumes` Befehl und seine gekürzte Ausgabe:
+
+[listing]
+----
+smis volumes
+ONTAP_LogicalDisk.CreationClassName="ONTAP_LogicalDisk",DeviceID="d46de7f0-3925-
+11df-8516-00a0980558ea",SystemCreationClassName="ONTAP_StorageSystem",SystemName
+="ONTAP:0084259609"
+ONTAP_LogicalDisk.CreationClassName="ONTAP_LogicalDisk",DeviceID="397cd140-3a45-
+11df-8516-00a0980558ea",SystemCreationClassName="ONTAP_StorageSystem",SystemName
+="ONTAP:0084259609"
+ONTAP_LogicalDisk.CreationClassName="ONTAP_LogicalDisk",DeviceID="69c472c0-4b27-
+11df-8517-00a0980558ea",SystemCreationClassName="ONTAP_StorageSystem",SystemName
+="ONTAP:0084259609"
+ONTAP_LogicalDisk.CreationClassName="ONTAP_LogicalDisk",DeviceID="6c7ea0b0-3927-
+11df-8516-00a0980558ea",SystemCreationClassName="ONTAP_StorageSystem",SystemName
+="ONTAP:0084259609"
+----

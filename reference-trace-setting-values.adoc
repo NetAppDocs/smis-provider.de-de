@@ -1,0 +1,92 @@
+---
+permalink: reference-trace-setting-values.html 
+sidebar: sidebar 
+keywords: specify, comments, trace, target, change, location 
+summary: Sie können die zu verfolgenden Komponenten, das Trace-Ziel und die Tracing-Level angeben. Optional können Sie den Namen und den Speicherort der Trace-Datei ändern, wenn Sie den Standardnamen und den Speicherort der Trace-Datei nicht verwenden möchten. 
+---
+= Werte für die Trace-Einstellung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die zu verfolgenden Komponenten, das Trace-Ziel und die Tracing-Level angeben. Optional können Sie den Namen und den Speicherort der Trace-Datei ändern, wenn Sie den Standardnamen und den Speicherort der Trace-Datei nicht verwenden möchten.
+
+Sie können die folgenden Trace-Einstellungen konfigurieren:
+
+* *TraceComponents*
++
+Gibt die Komponenten an, die verfolgt werden sollen. Standardmäßig werden alle Komponenten verfolgt.
+
+* *TraceFacility*
++
+Gibt das Ziel an, auf das Trace-Meldungen geschrieben werden:
+
++
+** Datei
++
+Dies ist der Standardwert, mit dem festgelegt wird, dass Trace-Meldungen in die Datei geschrieben werden, die durch die Konfigurationsoption traceFilePath angegeben wird.
+
+** Protokoll
++
+Gibt an, dass Trace-Meldungen in die cimserver_Standard-Protokolldatei geschrieben werden.
+
+
+
+* *TraceFilePath*
++
+Gibt den Speicherort der Trace-Datei an. Standardmäßig ist die Trace Datei benannt `cimserver.trc` Und befindet sich im `traces` Verzeichnis.
+
+* *TraceLevel*
++
+Gibt den Tastgrad an. Standardmäßig ist die Tracing deaktiviert.
+
++
+[cols="2*"]
+|===
+| Trace-Ebene | Geschriebene Trace-Nachrichten 
+
+
+ a| 
+0
+ a| 
+Tastung ist deaktiviert.
+
+
+
+ a| 
+1
+ a| 
+Schwere Meldungen und Protokollmeldungen.
+
+
+
+ a| 
+2
+ a| 
+Grundlegende Flow-Trace-Meldungen (geringe Datendetails)
+
+
+
+ a| 
+3
+ a| 
+Logikfluss zwischen den Funktionen (mittlere Datendetails)
+
+
+
+ a| 
+4
+ a| 
+Hohes Datendetail
+
+
+
+ a| 
+5
+ a| 
+Hohe Datendetails + Methode Eingabe und Beenden
+
+|===
+

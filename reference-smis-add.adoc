@@ -1,0 +1,87 @@
+---
+permalink: reference-smis-add.html 
+sidebar: sidebar 
+keywords: smis addsecure, smis add, storage system, http connection, configuration 
+summary: Der smis add Befehl fügt ein Speichersystem mit HTTP-Verbindung zu Ihrer Konfiguration hinzu, damit Sie das Gerät verwalten und überwachen können. Wenn es nicht notwendig ist, sollten Sie smis addstSecure anstelle von smis add verwenden. 
+---
+= smis hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Der `smis add` Befehl fügt ein Speichersystem mit einer HTTP-Verbindung zu Ihrer Konfiguration hinzu, damit Sie das Gerät verwalten und überwachen können. Sofern dies nicht notwendig ist, sollten Sie verwenden `smis addsecure` Statt `smis add`.
+
+`smis add`
+
+`_storage_sys storage_sys_user_`+
+`[-t {*http* | *https*}]`
+
+[NOTE]
+====
+Betriebssysteme verwenden andere Sprachen als die USA Englisch kann das nicht verwenden `add` Befehl.
+
+====
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+Administrator (Windows)
+
+.Parameter
+* `*_storage_sys_*`
++
+Name oder IP-Adresse des Speichersystems, das Sie hinzufügen
+
++
+Wenn Sie die IP-Adresse angeben, können Sie IPv4 oder IPv6 verwenden. Beispielsweise werden sowohl komprimierte als auch vollständige IPv6-Empfänger unterstützt `*1001:0002:0000:0000:0000:0000:0003:0004*` Oder `*1001:2::3:4*`.
+
+* `*_storage_sys_user_*`
++
+Benutzername des Administrators, der das Hinzufügen des Speichersystems verwaltet
+
+* `*_storage_sys_pwd_*`
++
+Optional: Kennwort des Administrators, der das Speichersystem verwaltet, das Sie hinzufügen
+
++
+Verwenden Sie diesen Parameter nicht aus Sicherheitsgründen als Best Practice. Dieser Parameter wird nur zur Automatisierung und Abwärtskompatibilität bereitgestellt.
+
+* `*[-t {http | https}]*`
++
+Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
+
+
+
+
+
+== Storage-System-Agent und Agent-Client-Protokoll
+
+Der `smis add` Und `smis addsecure` Befehle bestimmen das zwischen dem Speichersystem und dem Provider verwendete Protokoll. Der `[-t {*http* | *https*}]` Parameter bestimmt das Protokoll, das zwischen dem Provider und dem Client verwendet wird.
+
+Der `smis addsecure` Befehl und das `[-t {*https*}]` Der Parameter stellt eine Verbindung über die SSL-Verschlüsselung her, und unverschlüsselter Datenverkehr ist nicht zulässig. Der `smis add` Befehl und das `[-t {*http*}]` Der Parameter stellt eine Verbindung ohne Verwendung der SSL-Verschlüsselung her, und unverschlüsselter Datenverkehr ist zulässig.
+
+Vor dem Deaktivieren von SSL-verschlüsselten Verbindungen sollten Sie die Sicherheitsanforderungen Ihrer Umgebung berücksichtigen.
+
+Fügen Sie ein Speichersystem mit IPv4 mit einer IP-Adresse von 10.32.1.4 über HTTP hinzu:
+
+[listing]
+----
+smis add 10.32.1.4 user2
+----
+Es wird eine Bestätigungsmeldung angezeigt, dass das Speichersystem erfolgreich hinzugefügt wurde. Wenn ein Fehler aufgetreten ist, wird eine Fehlermeldung angezeigt.
+
+Fügen Sie ein Speichersystem mit IPv6 über HTTP hinzu:
+
+[listing]
+----
+smis add 1001:0002:0000:0000:0000:0000:0003:0004 user2
+smis add 1001:2::3:4 user2
+----
+Es wird eine Bestätigungsmeldung angezeigt, dass das Speichersystem erfolgreich hinzugefügt wurde. Wenn ein Fehler aufgetreten ist, wird eine Fehlermeldung angezeigt.
+
+Fügen Sie ein Speichersystem mit einer IP-Adresse von 10.32.1.4 über HTTP auf einem nicht-englischsprachigen System hinzu:
+
+[listing]
+----
+cimcli -n root/ontap ci ontap_filerdata hostname="10.32.1.4" username="vsadmin" password="PasSw0Rd" port=80 comMechanism="HTTP" --timeout 180
+----

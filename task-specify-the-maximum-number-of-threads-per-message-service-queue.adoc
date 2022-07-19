@@ -1,0 +1,35 @@
+---
+permalink: task-specify-the-maximum-number-of-threads-per-message-service-queue.html 
+sidebar: sidebar 
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance 
+summary: SMI-S Provider ermöglicht standardmäßig 80 Threads pro Nachrichtendienst-Warteschlange. Sie können den maximalen Gewindewert als 1 bis 5000 festlegen. Eine Erhöhung der maximalen Anzahl von Threads kann sich auf die Leistung des SMI-S Provider-Geräts auswirken. Überlegen Sie daher sorgfältig, ob Sie diesen Wert erhöhen müssen. 
+---
+= Geben Sie die maximale Anzahl von Threads pro Nachrichtendienstwarteschlange an
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider ermöglicht standardmäßig 80 Threads pro Nachrichtendienst-Warteschlange. Sie können den maximalen Gewindewert als 1 bis 5000 festlegen. Eine Erhöhung der maximalen Anzahl von Threads kann sich auf die Leistung der SMI-S Provider-Maschine auswirken. Überlegen Sie daher genau, ob Sie diesen Wert erhöhen müssen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+Wenn Ihre Trace-Datei viele Zeilen von anzeigt `insufficient resources` Ausgabe: Sie müssen die Anzahl der Threads in Schritten von 500 erhöhen.
+
+Wenn Sie die maximale Anzahl von Threads auf weniger als 20 einstellen, verwenden Sie die `*cimcli -n root/ontap niall*` Befehl, der Provider reagiert nicht mehr und gibt den aus `Insufficient threadpool` Nachricht in der Trace-Datei. In diesem Fall müssen Sie die Anzahl der Threads in Schritten von 500 erhöhen und dann den Provider neu starten.
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Erstellen Sie eine System- oder Benutzerumgebvariable mit dem Namen `PEGASUS_MAX_THREADS_PER_SVC_QUEUE` Mit dem neuen maximalen Gewindewert.
++
+Informationen zum Erstellen von Umgebungsvariablen finden Sie in der Windows-Dokumentation.
+
+. Starten Sie den CIM-Server neu:
++
+`*smis cimserver restart*`
+
+

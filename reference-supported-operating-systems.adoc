@@ -1,0 +1,55 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: Vor der Installation von SMI-S Provider müssen Sie überprüfen, ob auf dem Windows-Host ein unterstütztes Betriebssystem ausgeführt wird. 
+---
+= Unterstützte Betriebssystemversionen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Vor der Installation von SMI-S Provider müssen Sie überprüfen, ob auf dem Windows-Host ein unterstütztes Betriebssystem ausgeführt wird.
+
+[cols="3*"]
+|===
+| Betriebssystem | Unterstützte Versionen | Erforderliche Client Software 
+
+
+ a| 
+Windows
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Die Runtime-Bibliotheken von Microsoft Visual C{pp} 2010 werden während der Installation von SMI-S Provider automatisch installiert. Um mögliche Probleme im Zusammenhang mit Laufzeitbibliotheken zu vermeiden, müssen Sie Microsoft Visual C{pp} 2010 Redistributable Package (x86) installieren. Von der folgenden Adresse aus: http://www.microsoft.com[]
+
+|===
+
+
+== SCVMM 2016 UR 2.1-Anforderung
+
+System Center Virtual Machine Manager (SCVMM) 2016 Update Rollup (UR) 2.1 ist für das Management des NetApp File Servers mit NetApp SMI-S Provider 5.2.4 und höher erforderlich.
+
+Ohne diese UR zeigt SCVMM 2016 den Wert des an `Total Capacity` Und `Available Capacity` Optionen als `*0 GB*` Für vorhandene File Shares in NetApp File Server.
+
+Zum Ausführen von SMI-S Provider muss der Provider-Hostcomputer die folgenden Spezifikationen erfüllen:
+
+* Der Provider-Hostcomputer kann nicht zum Hosten eines Hyper-V-Knotens verwendet werden.
+* SCVMM darf nicht auf dem Hostcomputer des Anbieters ausgeführt werden.
+* Auf dem Host-Rechner des Providers dürfen andere speicherintensive Programme nicht ausgeführt werden.
+* Auf dem Provider-Host-Rechner dürfen keine SMI-S-Provider eines anderen Anbieters ausgeführt werden.
+
+
+Die folgenden Hypervisoren werden unterstützt:
+
+* Microsoft Windows Server 2016 Hyper-V
+* VMware ESX 5.0
+* VMware ESX 5.1
+* VMware ESX 5.5
+* VMware ESX 6.0
+

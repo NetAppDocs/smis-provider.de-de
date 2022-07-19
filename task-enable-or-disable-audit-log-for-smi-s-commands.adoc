@@ -1,0 +1,55 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: Alle eingehenden SMI-S-Befehle werden in Audit-Log-Dateien aufgezeichnet, sodass Auditoren die Aktivitäten des WBEM-Client-Betriebs und der Provider-Nutzung nachverfolgen können. Sie können die Protokollierung dieser eingehenden Befehle aktivieren oder deaktivieren, indem Sie eine dynamische Konfigurationseigenschaft festlegen. 
+---
+= Aktivieren oder Deaktivieren des Prüfprotokolls für SMI-S-Befehle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Alle eingehenden SMI-S-Befehle werden in Audit-Log-Dateien aufgezeichnet, sodass Auditoren die Aktivitäten des WBEM-Client-Betriebs und der Provider-Nutzung nachverfolgen können. Sie können die Protokollierung dieser eingehenden Befehle aktivieren oder deaktivieren, indem Sie eine dynamische Konfigurationseigenschaft festlegen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+Audit-Protokolldaten können eine Aufzeichnung von Zugriffs-, Aktivitäts- und Konfigurationsänderungen für einen CIM-Server bereitstellen. Der Inhalt der Audit-Datei enthält den Befehl, von dem der Befehl ausgegeben wurde, und die Zeit, zu der der Befehl ausgegeben wurde.
+
+Die dynamische Konfigurationseigenschaft `enableAuditLog` Aktiviert oder deaktiviert die Audit-Protokollierung während der Laufzeit. Standardmäßig ist enableAuditLog auf true gesetzt.
+
+In der Praxis wird häufig die Audit-Protokollierung aktiviert lassen.
+
+Die Audit-Log-Datei (`cimserver_auditlog`) Wird im pegasus-Log-Verzeichnis gespeichert (`C:\Program Files (x86)\Netapp\smis\pegasus\logs`).
+
+Die maximale Größe der Audit-Log-Datei beträgt 10 MB. Nach Erreichen der Höchstgrenze wird die Datei umbenannt `cimserver_auditlog.0`, Und eine neue `cimserver auditlog` Die Datei wird erstellt, um die neueren Audit-Protokollierungsinformationen zu erfassen.
+
+NetApp SMI-S Provider verwaltet die sechs neuesten Audit-Log-Dateien: `cimserver_auditlog.0` Bis `cimserver_auditlog.5`.
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Legen Sie die Auditprotokollierung von SMI-S-Befehlen zur Laufzeit fest:
++
+[cols="2*"]
+|===
+| Aktion | Befehl 
+
+
+ a| 
+*SMI-S-Logging für Audits* aktivieren
+ a| 
+`*cimconfig -s enableAuditLog=true*`
+
+
+
+ a| 
+*SMI-S-Audit-Protokollierung deaktivieren*
+ a| 
+`*cimconfig -s enableAuditLog=false*`
+
+|===
+

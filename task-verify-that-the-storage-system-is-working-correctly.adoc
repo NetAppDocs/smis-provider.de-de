@@ -1,0 +1,86 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: Bevor SMI-S Provider konfiguriert werden kann, müssen Sie dem CIMOM-Repository mindestens ein Speichersystem hinzufügen und anschließend überprüfen, ob das Speichersystem ordnungsgemäß funktioniert. 
+---
+= Überprüfen Sie, ob das Storage-System ordnungsgemäß funktioniert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor SMI-S Provider konfiguriert werden kann, müssen Sie dem CIMOM-Repository mindestens ein Speichersystem hinzufügen und anschließend überprüfen, ob das Speichersystem ordnungsgemäß funktioniert.
+
+.Bevor Sie beginnen
+* Sie müssen sich bereits als Administrator angemeldet haben.
+* Sie müssen bereits auf SMI-S Provider zugreifen.
+
+
+.Schritte
+. Fügen Sie dem CIMOM-Repository mindestens ein Storage-System hinzu:
++
+[cols="2*"]
+|===
+| So fügen Sie ein Storage-System mit... | Diesen Befehl eingeben... 
+
+
+ a| 
+HTTP-Verbindung zwischen dem Provider und dem Speichersystem
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+
+
+
+ a| 
+HTTPS-Verbindung zwischen dem Provider und dem Speichersystem
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+
+|===
++
+Der Befehl wartet bis zu 15 Minuten, bis der Provider den Cache aktualisiert und antwortet.
+
+. Überprüfen Sie die Ausgabe für die folgenden Befehle:
++
+[cols="2*"]
+|===
+| Für diesen Befehl... | Überprüfen Sie, dass... 
+
+
+ a| 
+`smis list`
+ a| 
+Die Anzahl der Elemente entspricht der Anzahl der zu verwaltenden Storage-Systeme.
+
+
+
+ a| 
+`smis disks`
+ a| 
+Die Anzahl der Festplatten entspricht der Gesamtzahl der Festplatten aller Storage-Systeme.
+
+
+
+ a| 
+`smis luns`
+ a| 
+Die Anzahl der LUNs entspricht der Gesamtzahl der LUNs auf allen Storage-Systemen.
+
+
+
+ a| 
+`smis pools`
+ a| 
+Die Anzahl der ONTAP_ConcertePools entspricht der Gesamtzahl der Aggregate auf allen Storage-Systemen.
+
+
+
+ a| 
+`smis volumes`
+ a| 
+Die Anzahl der Volumes entspricht der Gesamtzahl der Volumes aller Storage-Systeme.
+
+|===
+

@@ -1,0 +1,26 @@
+---
+permalink: task-specify-the-concrete-job-lifetime-value.html 
+sidebar: sidebar 
+keywords: smi-s provider, asynchronous, operation, concrete job, increase, lifetime, 60 minutes, 24 hours 
+summary: 'SMI-S Provider verfolgt den Fortschritt asynchroner Vorgänge durch die Erstellung konkreter Aufträge. Sie können die konkrete Einsatzdauer von 60 Minuten (3600 Sekunden) auf einen Wert von 86400 Sekunden (24 Stunden) erhöhen.' 
+---
+= Geben Sie den konkreten Wert für die Einsatzdauer an
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider verfolgt den Fortschritt von asynchronen Operationen durch die Erstellung von _Concrete Jobs_. Sie können die konkrete Einsatzdauer von 60 Minuten (3600 Sekunden) auf einen Wert von 86400 Sekunden (24 Stunden) erhöhen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+.Schritt
+. Erstellen Sie eine System- oder Benutzerumgebvariable mit dem Namen `JOB_LIFETIME_SEC` Mit dem neuen Lebenszeitwert (in Sekunden).
++
+Informationen zum Erstellen von Umgebungsvariablen finden Sie in der Windows-Dokumentation.
+
+

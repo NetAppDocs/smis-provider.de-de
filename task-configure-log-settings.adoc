@@ -1,0 +1,53 @@
+---
+permalink: task-configure-log-settings.html 
+sidebar: sidebar 
+keywords: system message, directory, netapp si-s provider, cim server log 
+summary: Standardmäßig werden alle Systemmeldungen protokolliert. Darüber hinaus befinden sich standardmäßig die Systemmeldungsprotokolle im Log-Verzeichnis in dem Verzeichnis, in dem NetApp SMI-S Provider installiert ist. Sie können den Speicherort und die Ebene der Systemmeldungen ändern, die in das CIM-Serverprotokoll geschrieben werden. Sie können beispielsweise festlegen, dass Protokolle in einem von Ihnen angegebenen Verzeichnis gespeichert sind und nur tödliche Systemmeldungen in das CIM-Serverprotokoll geschrieben werden. 
+---
+= Konfigurieren Sie die Protokolleinstellungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Standardmäßig werden alle Systemmeldungen protokolliert. Darüber hinaus befinden sich standardmäßig die Systemmeldungsprotokolle im `logs` Verzeichnis in dem Verzeichnis, in dem NetApp SMI-S Provider installiert ist. Sie können den Speicherort und die Ebene der Systemmeldungen ändern, die in das CIM-Serverprotokoll geschrieben werden. Sie können beispielsweise festlegen, dass Protokolle in einem von Ihnen angegebenen Verzeichnis gespeichert sind und nur tödliche Systemmeldungen in das CIM-Serverprotokoll geschrieben werden.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+.Schritte
+. Greifen Sie auf NetApp SMI-S Provider zu.
+. Führen Sie eine der folgenden Aktionen durch:
++
+[cols="3*"]
+|===
+| Aktion | Befehl | Weitere Informationen 
+
+
+ a| 
+Ändern Sie die Protokollierungsebene für Systemnachrichten
+ a| 
+`*cimconfig -s logLevel=_new_log_level_ -p*`
+ a| 
+Wenn Sie die Protokollierungsebene z. B. in „`INFORMATION`“ ändern möchten, geben Sie den folgenden Befehl ein: + `*cimconfig -s logLevel=INFORMATION -p*`
+
+
+
+ a| 
+Ändern des Protokollverzeichnisses für Systemmeldung
+ a| 
+`*cimconfig -s logdir=new_log_directory -p*` Wenn der `_new_log_directory_` Enthält Leerzeichen. Sie müssen es in Anführungszeichen einschließen (`"_new log directory_"`).
+ a| 
+Wenn Sie beispielsweise das Protokollverzeichnis in „`serverlogs`“ ändern möchten, würden Sie diesen Befehl eingeben:
+
+`*cimconfig -s logdir=serverlogs -p*`
+
+|===
+. Starten Sie den CIM-Server neu:
++
+`*smis cimserver restart*`
+
+

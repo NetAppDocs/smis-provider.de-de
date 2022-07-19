@@ -1,0 +1,14 @@
+---
+permalink: concept-manage-logging-and-tracing-overview.html 
+sidebar: sidebar 
+keywords: configure, smi-s provider, trace files, specify, levels, message logging, component, trace, file location 
+summary: Sie können konfigurieren, wie SMI-S Provider Protokoll- und Trace-Dateien verwaltet, z. B. die Meldungsebenen festlegen, die protokolliert werden sollen, und das Verzeichnis, in dem Protokolle gespeichert werden. Sie geben auch die Komponenten an, die verfolgt werden sollen, das Ziel, auf das Trace-Meldungen geschrieben werden, die Tracing-Ebene und den Speicherort der Trace-Datei. 
+---
+= Überblick
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können konfigurieren, wie SMI-S Provider Protokoll- und Trace-Dateien verwaltet, z. B. die Meldungsebenen festlegen, die protokolliert werden sollen, und das Verzeichnis, in dem Protokolle gespeichert werden. Sie geben auch die Komponenten an, die verfolgt werden sollen, das Ziel, auf das Trace-Meldungen geschrieben werden, die Tracing-Ebene und den Speicherort der Trace-Datei.

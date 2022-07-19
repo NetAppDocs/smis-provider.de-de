@@ -1,0 +1,34 @@
+---
+permalink: reference-data-ontap-smi-s-agent-components.html 
+sidebar: sidebar 
+keywords: smi-s provider 
+summary: 'NetApp SMI-S Provider besteht aus drei Komponenten, mit denen Sie Storage-Systeme managen und überwachen können: CIMOM, Provider-Objekte und ein Repository.' 
+---
+= NetApp SMI-S Provider-Komponenten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider besteht aus drei Komponenten, mit denen Sie Storage-Systeme managen und überwachen können: CIMOM, Provider-Objekte und ein Repository.
+
+* * CIMOM*
++
+Dies ist die Grundlage für NetApp SMI-S Provider. CIMOM erfasst, validiert und authentifiziert jede Anwendungsanfrage und antwortet anschließend auf die Applikation. Es wird zu einem Kabelkanal für jede Anforderung, indem der entsprechende Provider zur Bearbeitung jeder Anfrage anruft.
+
+* *Provider-Objekte*
++
+Wenn ein Host einen Befehl oder eine Abfrage an SMI-S Provider ausgibt, lädt CIMOM ein freigegebenes Bibliotheksobjekt, ruft es auf, eine Anforderung zu bearbeiten und gibt die daraus resultierenden Informationen an den Host zurück.
+
++
+[NOTE]
+====
+Windows-Hosts verwenden DLL-Objekte.
+
+====
+* *Repository*
++
+Für sein Repository verwendet CIMOM eine Flatfile-Datenbank. Es speichert persistente Daten, die auf CIM-Ebene benötigt werden.
+
+

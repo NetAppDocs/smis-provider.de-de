@@ -1,0 +1,26 @@
+---
+permalink: task-specify-the-ontapi-timeout-value.html 
+sidebar: sidebar 
+keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 300 sec 
+summary: 'SMI-S Provider macht ONTAP API (ONTAPI)-Aufrufe zu Storage-Systemen. Standardmäßig beträgt das ONTAPI-Timeout 300 Sekunden. Sie können das Timeout auf einen Wert von 60 bis 300 Sekunden einstellen.' 
+---
+= Geben Sie den ONTAPI-Timeout-Wert an
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider macht ONTAP API (ONTAPI)-Aufrufe zu Storage-Systemen. Standardmäßig beträgt das ONTAPI-Timeout 300 Sekunden. Sie können das Timeout auf einen Wert von 60 bis 300 Sekunden einstellen.
+
+.Bevor Sie beginnen
+* Sie müssen bereits Anmeldedaten als Administrator besitzen.
+* Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
+
+
+.Schritt
+. Erstellen Sie eine System- oder Benutzerumgebvariable mit dem Namen `ONTAPI_TIMEOUT_SEC` Mit dem neuen Timeout-Wert (in Sekunden).
++
+Informationen zum Erstellen von Umgebungsvariablen finden Sie in der Windows-Dokumentation.
+
+

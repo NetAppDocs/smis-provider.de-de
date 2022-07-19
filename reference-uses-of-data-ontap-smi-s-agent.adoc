@@ -1,0 +1,16 @@
+---
+permalink: reference-uses-of-data-ontap-smi-s-agent.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, manage, monitor, storage systems, lun 
+summary: NetApp SMI-S Provider vereinfacht das Managen und Überwachen von Storage-Systemen sowie das Managen von LUNs und Volumes von Storage-Systemen. 
+---
+= Nutzung des NetApp SMI-S Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider vereinfacht das Managen und Überwachen von Storage-Systemen sowie das Managen von LUNs und Volumes von Storage-Systemen.
+
+Mithilfe von NetApp SMI-S-Provider können Sie Storage-Controller mithilfe von System Center 2016 - Virtual Machine Manager oder System Center 2016 - Virtual Machine Manager managen.

@@ -1,0 +1,81 @@
+---
+permalink: reference-types-of-cim-users-and-associated-operations.html 
+sidebar: sidebar 
+keywords: smi-s provider, various types, control, access 
+summary: Bei der Verwendung von SMI-S Provider gibt es verschiedene Benutzertypen, die Sie einem Benutzer zuweisen können, um den Zugriff auf den CIM-Server zu steuern. 
+---
+= Typen von CIM-Benutzern und zugehörigen Vorgängen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bei der Verwendung von SMI-S Provider gibt es verschiedene Benutzertypen, die Sie einem Benutzer zuweisen können, um den Zugriff auf den CIM-Server zu steuern.
+
+Ab dieser Version kann der Domain-Benutzer die Benutzerdatenbank des SMI-S Provider und andere Konfigurationseinstellungen als Domain-Benutzer der lokalen Administratorengruppe ändern.
+
+In der folgenden Tabelle sind die unterstützten Benutzer des CIM-Servers und die Vorgänge aufgeführt, die jeder Typ ausführen kann.
+
+[cols="2*"]
+|===
+| Benutzertyp | Betrieb 
+
+
+ a| 
+Domänenadministrator der Administratorgruppe
+ a| 
+Konfiguration des SMI-S Provider und Benutzerverwaltung mit `cimconfig` Und `cimuser` Befehle. Beispiel:
+
+* Fügen Sie einen Benutzer zum oder aus dem Trust Store von SMI-S Provider hinzu oder entfernen Sie ihn.
+* Aktivieren, Deaktivieren oder Ändern der Protokollebene und der Ablaufverfolgungskonfiguration
+* Aktivieren oder deaktivieren Sie die Authentifizierungs-Engine im SMI-S Provider.
+
+
+Storage Management und Verifizierung mit `smis` Und `cimcli` Befehle. Beispiel:
+
+* Storage-Controller oder SVMs zu oder von einem SMI-S-Provider-Repository oder einer Datenbank oder einem Cache hinzufügen oder entfernen.
+* Aktualisierung von Storage-Controllern oder SVMs im SMI-S-Provider-Cache
+* Überprüfung des Storage-Controller oder SVM-Managements
+
+
+SCVMM-Erkennungsvorgänge mithilfe der SCVMM-GUI
+
+
+
+ a| 
+Domänenbenutzer der lokalen Administratorengruppe
+
+
+
+ a| 
+Lokaler Benutzer der lokalen Administratorgruppe
+
+
+
+ a| 
+Integrierter Domain Administrator-Benutzer
+
+
+
+ a| 
+Integrierter lokaler Administrator-Benutzer
+
+
+
+ a| 
+Domänenbenutzer der Benutzergruppe
+ a| 
+SCVMM-Erkennungsvorgänge mithilfe der SCVMM-GUI
+
+
+
+ a| 
+Lokaler Benutzer der Benutzergruppe
+
+|===
+[NOTE]
+====
+Wenn Sie einen SMI-S Provider auf einem Windows-Host haben und einen Benutzernamen „`Administrator`“ geändert haben, müssen Sie sich aus dem System abmelden und dann wieder anmelden. Der SMI-S Windows Service übernimmt die Authentifizierung in diesem Zeitraum. Dadurch werden Änderungen an den Anmeldeinformationen erst erkannt, wenn sich der Administrator abmeldet und sich dann erneut anmeldet.
+
+====

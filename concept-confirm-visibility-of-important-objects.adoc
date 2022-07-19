@@ -1,0 +1,16 @@
+---
+permalink: concept-confirm-visibility-of-important-objects.html 
+sidebar: sidebar 
+keywords: manage, storage, system, confirm, important, logic, physical, object, netapp smis-s provider 
+summary: Nach dem Hinzufügen eines gemanagten Storage-Systems sollten Sie bestätigen, dass alle wichtigen logischen und physischen Objekte im NetApp SMI-S Provider angezeigt werden. 
+---
+= Die Sichtbarkeit wichtiger Objekte bestätigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Nach dem Hinzufügen eines gemanagten Storage-Systems sollten Sie bestätigen, dass alle wichtigen logischen und physischen Objekte im NetApp SMI-S Provider angezeigt werden.
+
+Sie können das verwenden `smis` Befehl zum Anzeigen der Objekte im NetApp SMI-S Provider CIMOM Repository. Verwenden Sie beispielsweise `smis list` Um hinzugefügte Speichersysteme anzuzeigen, und verwenden `smis luns` Um LUN-Informationen anzuzeigen.
