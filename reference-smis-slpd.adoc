@@ -13,14 +13,18 @@ summary: Der Befehl smis slpd startet oder stoppt den SLP-Daemon.
 [role="lead"]
 Der `smis slpd` Befehl startet oder stoppt den SLP-Daemon.
 
+.Syntax
 `smis slpd`
 
 `{*start* | *stop*}`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
+.Beispiel
 Starten Sie den SLP-Daemon:
 
 [listing]

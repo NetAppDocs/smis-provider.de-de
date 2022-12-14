@@ -13,12 +13,15 @@ summary: Der Befehl sbis-Initiatoren zeigt Fibre-Channel- und iSCSI-Portinformat
 [role="lead"]
 Der `smis initiators` Mit dem Befehl werden Informationen zu Fibre Channel- und iSCSI-Ports für Speichersysteme angezeigt.
 
+.Syntax
 smis-Initiatoren
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis initiators` Befehl und seine gekürzte Ausgabe:
 
 [listing]

@@ -18,6 +18,7 @@ Alle eingehenden SMI-S-Befehle werden in Audit-Log-Dateien aufgezeichnet, sodass
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Audit-Protokolldaten können eine Aufzeichnung von Zugriffs-, Aktivitäts- und Konfigurationsänderungen für einen CIM-Server bereitstellen. Der Inhalt der Audit-Datei enthält den Befehl, von dem der Befehl ausgegeben wurde, und die Zeit, zu der der Befehl ausgegeben wurde.
 
 Die dynamische Konfigurationseigenschaft `enableAuditLog` Aktiviert oder deaktiviert die Audit-Protokollierung während der Laufzeit. Standardmäßig ist enableAuditLog auf true gesetzt.

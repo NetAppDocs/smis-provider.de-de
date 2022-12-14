@@ -13,6 +13,7 @@ summary: Der smis add Befehl fügt ein Speichersystem mit HTTP-Verbindung zu Ihr
 [role="lead"]
 Der `smis add` Befehl fügt ein Speichersystem mit einer HTTP-Verbindung zu Ihrer Konfiguration hinzu, damit Sie das Gerät verwalten und überwachen können. Sofern dies nicht notwendig ist, sollten Sie verwenden `smis addsecure` Statt `smis add`.
 
+.Syntax
 `smis add`
 
 `_storage_sys storage_sys_user_`+
@@ -23,8 +24,10 @@ Der `smis add` Befehl fügt ein Speichersystem mit einer HTTP-Verbindung zu Ihre
 Betriebssysteme verwenden andere Sprachen als die USA Englisch kann das nicht verwenden `add` Befehl.
 
 ====
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
 .Parameter
@@ -62,6 +65,7 @@ Der `smis addsecure` Befehl und das `[-t {*https*}]` Der Parameter stellt eine V
 
 Vor dem Deaktivieren von SSL-verschlüsselten Verbindungen sollten Sie die Sicherheitsanforderungen Ihrer Umgebung berücksichtigen.
 
+.Beispiel
 Fügen Sie ein Speichersystem mit IPv4 mit einer IP-Adresse von 10.32.1.4 über HTTP hinzu:
 
 [listing]
@@ -70,6 +74,7 @@ smis add 10.32.1.4 user2
 ----
 Es wird eine Bestätigungsmeldung angezeigt, dass das Speichersystem erfolgreich hinzugefügt wurde. Wenn ein Fehler aufgetreten ist, wird eine Fehlermeldung angezeigt.
 
+.Beispiel
 Fügen Sie ein Speichersystem mit IPv6 über HTTP hinzu:
 
 [listing]
@@ -79,6 +84,7 @@ smis add 1001:2::3:4 user2
 ----
 Es wird eine Bestätigungsmeldung angezeigt, dass das Speichersystem erfolgreich hinzugefügt wurde. Wenn ein Fehler aufgetreten ist, wird eine Fehlermeldung angezeigt.
 
+.Beispiel
 Fügen Sie ein Speichersystem mit einer IP-Adresse von 10.32.1.4 über HTTP auf einem nicht-englischsprachigen System hinzu:
 
 [listing]

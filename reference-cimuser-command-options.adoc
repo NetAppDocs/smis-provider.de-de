@@ -13,10 +13,13 @@ summary: Mit den cimuser-Optionen können Sie CIM-Serverbenutzer hinzufügen, en
 [role="lead"]
 Sie können das verwenden `cimuser` Befehl zum Hinzufügen, Entfernen, Löschen, Ändern und Auflisten von CIM-Serverbenutzern sowie zum Verwalten ihrer Passwörter.
 
+.Syntax
 `cimuser _options_`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
 .Optionen
@@ -58,6 +61,7 @@ Gibt das Passwort für den angegebenen Benutzer an.
 
 
 
+.Beispiel
 Erstellen Sie einen CIM-Benutzer namens sydney mit einem Passwort von password1:
 
 [listing]

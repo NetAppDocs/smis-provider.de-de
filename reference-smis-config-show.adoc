@@ -13,12 +13,16 @@ summary: Der Befehl smis config show zeigt die aktuellen Konfigurationsinformati
 [role="lead"]
 Der `smis config show` Der Befehl listet die aktuellen Konfigurationsinformationen für den CIM-Server auf.
 
+.Syntax
 `smis config show`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
+.Beispiel
 Der `smis config show` Und ihre Ausgabe:
 
 [listing]

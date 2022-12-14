@@ -13,12 +13,15 @@ summary: Der Befehl sbis list zeigt Speichersysteme an, die hinzugefügt werden.
 [role="lead"]
 Der `smis list` Befehl zeigt Storage-Systeme an, die hinzugefügt werden.
 
+.Syntax
 smis-Liste
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis list` Befehl und seine Ausgabe:
 
 [listing]

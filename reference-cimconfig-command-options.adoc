@@ -13,10 +13,13 @@ summary: Sie können den Befehl cimconfig verwenden, um CIMOM-Konfigurationseins
 [role="lead"]
 Sie können das verwenden `cimconfig` Befehl zum Konfigurieren von CIMOM-Einstellungen, z. B. Aktivieren und Deaktivieren von HTTP und HTTPS sowie Ändern der HTTP- und HTTPS-Port-Nummern. Nach Eingabe des `cimconfig` Befehl oder Erstellen einer Umgebungsvariable für den Konfigurationswert von NetApp SMI-S Provider müssen Sie den CIM-Server mithilfe der neu starten `smis cimserver restart` Befehl.
 
+.Syntax
 `cimconfig _options_`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
 .Optionen
@@ -58,6 +61,7 @@ Zeigt die Version des CIM-Servers an.
 
 
 
+.Beispiel
 Ändern Sie die maximale Protokolldateigröße auf 15000 KB:
 
 [listing]

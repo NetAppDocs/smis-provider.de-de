@@ -10,6 +10,7 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
 * *Nachricht*
 +
 `Access is denied.`

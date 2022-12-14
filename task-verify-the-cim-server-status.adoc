@@ -13,6 +13,7 @@ summary: Nach der Installation von NetApp SMI-S Provider müssen Sie überprüfe
 [role="lead"]
 Nach der Installation von NetApp SMI-S Provider müssen Sie überprüfen, ob der CIM-Server nach dem Zugriff auf SMI-S Provider automatisch gestartet wird.
 
+.Bevor Sie beginnen
 Sie müssen bereits Anmeldedaten als Administrator besitzen.
 
 .Schritte

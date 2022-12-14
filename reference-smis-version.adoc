@@ -13,12 +13,15 @@ summary: Mit dem Befehl sbis Version wird die Version von NetApp SMI-S Provider 
 [role="lead"]
 Der `smis version` Mit dem Befehl wird die Version des NetApp SMI-S Provider angezeigt.
 
+.Syntax
 `smis version`
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis version` Befehl und seine Ausgabe:
 
 [listing]

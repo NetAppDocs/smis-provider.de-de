@@ -18,6 +18,7 @@ Warnmeldungen, Dateikontingente und Lifecycle-Angaben sind standardmäßig deakt
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Wenn `PEGASUS_DISABLE_INDICATIONS` Ist auf festgelegt `false`, Dann Warnung (`ONTAP_AlertIndication`), Dateisystemkontingente (`ONTAP_FSQuotaIndication`) Und Lifecycle-Indikationen sind für NetApp SMI-S Provider aktiviert.
 
 .Schritte

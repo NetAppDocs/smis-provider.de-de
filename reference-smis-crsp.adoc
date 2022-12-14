@@ -13,12 +13,15 @@ summary: Der smis crsp-Befehl beschreibt CIM-registrierte Unterprofile, die von 
 [role="lead"]
 Der `smis crsp` Befehl beschreibt von NetApp SMI-S Provider unterstützte CIM-registrierte Unterprofile, einschließlich NetApp SMI-S Provider-Unterprofile.
 
+.Syntax
 smis crsp
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis crsp` Befehl und seine gekürzte Ausgabe:
 
 [listing]

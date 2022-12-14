@@ -13,11 +13,14 @@ summary: 'Der Befehl sbis exports zeigt Network Attached Storage (NAS)-Exporte f
 [role="lead"]
 Der `smis exports` Mit dem Befehl werden NAS-Exporte (Network Attached Storage) für Speichersysteme angezeigt.
 
+.Syntax
 smis-Exporte
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -27,6 +30,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis exports` Befehl und seine Ausgabe:
 
 [listing]

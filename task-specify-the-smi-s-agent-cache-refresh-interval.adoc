@@ -18,6 +18,7 @@ Standardmäßig ruft SMI-S Provider Informationen alle fünf Minuten (300 Sekund
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Wenn Sie den Status des Storage-Systems jederzeit manuell aktualisieren möchten, können Sie das verwenden `smis refresh` Befehl.
 
 .Schritte

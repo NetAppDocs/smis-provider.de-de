@@ -13,10 +13,13 @@ summary: Der Befehl smis cimom beschreibt den CIM-Objektmanager.
 [role="lead"]
 Der `smis cimom` Der Befehl beschreibt den CIM-Objektmanager.
 
+.Syntax
 smis cimom `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -26,6 +29,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis cimom` Befehl und seine Ausgabe:
 
 [listing]

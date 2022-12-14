@@ -13,14 +13,17 @@ summary: Der Befehl sbis delete löscht ein Speichersystem.
 [role="lead"]
 Der `smis delete` Befehl löscht ein Storage-System.
 
+.Syntax
 `smis delete`
 
 `_storage_sys_`
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
 .Parameter
@@ -34,6 +37,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Löschen Sie ein Speichersystem mit der Bezeichnung Management-1:
 
 `*smis delete mgt-1*`

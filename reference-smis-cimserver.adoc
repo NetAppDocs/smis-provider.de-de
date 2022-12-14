@@ -13,12 +13,15 @@ summary: Der Befehl smis cimserver startet, stoppt, startet neu oder ruft den St
 [role="lead"]
 Der `smis cimserver` Befehl startet, stoppt, startet neu oder ruft den Status des CIM-Servers ab.
 
+.Syntax
 `smis cimserver`
 
 `{*start* | *stop* | *restart* | *status*}`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Administrator (Windows)
 
 .Parameter

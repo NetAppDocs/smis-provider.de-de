@@ -13,12 +13,15 @@ summary: Der Befehl smis luns zeigt LUN-Informationen für Speichersysteme an.
 [role="lead"]
 Der `smis luns` Mit Befehl werden LUN-Informationen für Storage-Systeme angezeigt.
 
+.Syntax
 smis luns
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis luns` Befehl und seine gekürzte Ausgabe:
 
 [listing]

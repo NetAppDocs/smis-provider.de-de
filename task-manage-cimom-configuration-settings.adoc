@@ -18,6 +18,7 @@ Sie können SMI-S Provider zum Verwalten der CIMOM-Konfiguration verwenden, z. B
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Wenn in Ihrer Umgebung verschlüsselter Datenverkehr vom und zum CIM-Server erforderlich ist, müssen Sie zuerst HTTP-Verbindungen deaktivieren und dann überprüfen, ob HTTPS-Verbindungen für den CIM-Server aktiviert sind.
 
 .Schritte

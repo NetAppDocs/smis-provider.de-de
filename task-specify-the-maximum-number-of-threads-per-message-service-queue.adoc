@@ -18,6 +18,7 @@ SMI-S Provider ermöglicht standardmäßig 80 Threads pro Nachrichtendienst-Wart
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Wenn Ihre Trace-Datei viele Zeilen von anzeigt `insufficient resources` Ausgabe: Sie müssen die Anzahl der Threads in Schritten von 500 erhöhen.
 
 Wenn Sie die maximale Anzahl von Threads auf weniger als 20 einstellen, verwenden Sie die `*cimcli -n root/ontap niall*` Befehl, der Provider reagiert nicht mehr und gibt den aus `Insufficient threadpool` Nachricht in der Trace-Datei. In diesem Fall müssen Sie die Anzahl der Threads in Schritten von 500 erhöhen und dann den Provider neu starten.

@@ -18,6 +18,7 @@ Wenn die Ablaufverfolgung aktiviert ist, werden standardmäßig sieben Trace-Dat
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Wenn die Ablaufverfolgung aktiviert ist, werden die Nachverfolgungsinformationen in das geschrieben `cimserver.trc` Datei: Die Trace-Dateien werden gedreht. Wenn `cimserver.trc` Erreicht die maximale Größe der Trace-Datei, deren Inhalt wird in den verschoben `cimserver.trc._n_` Datei: Standardmäßig ist `n` Ist ein Wert zwischen 0 und 5. Wenn Sie mehr gespeicherte Trace-Dateien benötigen, erhöhen Sie den Wert von `_n_`.
 
 .Schritte

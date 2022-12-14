@@ -13,12 +13,15 @@ summary: Der sbis-Pools-Befehl listet die Speicherpools für Speichersysteme auf
 [role="lead"]
 Der `smis pools` Befehl listet die Speicherpools für Speichersysteme auf.
 
+.Syntax
 `smis pools`
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis pools` Befehl und seine gekürzte Ausgabe:
 
 [listing]

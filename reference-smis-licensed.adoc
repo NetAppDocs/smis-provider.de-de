@@ -13,12 +13,15 @@ summary: Der smos lizensierte Befehl listet die lizenzierten Funktionen für Spe
 [role="lead"]
 Der `smis licensed` Mit dem Befehl werden die lizenzierten Funktionen für Storage-Systeme aufgeführt.
 
+.Syntax
 smis lizenziert
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -28,6 +31,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis licensed` Befehl und seine gekürzte Ausgabe:
 
 [listing]

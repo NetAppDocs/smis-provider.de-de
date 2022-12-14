@@ -13,12 +13,15 @@ summary: 'Standardmäßig ruft SMI-S Provider alle 60 Minuten (3600 Sekunden) au
 [role="lead"]
 Standardmäßig ruft SMI-S Provider alle 60 Minuten (3600 Sekunden) automatisch Informationen aus den Speichersystemen ab. Sie können das verwenden `smis refresh` Befehl zum manuellen Aktualisieren eines bestimmten Storage-Systems.
 
+.Syntax
 `smis refresh _storage_system_ip_`
 
 `[-t {*http* | *https*}]`
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -32,6 +35,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis refresh` Befehl und seine Ausgabe:
 
 [listing]

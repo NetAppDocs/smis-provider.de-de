@@ -18,6 +18,7 @@ Mithilfe von NetApp SMI-S Provider-Befehlen können Speichersysteme im CIMOM-Rep
 * Sie müssen sich bereits als Administrator beim Hostsystem angemeldet haben.
 
 
+.Über diese Aufgabe
 Bei ONTAP müssen Sie eine Management-IP-Adresse für eine SVM und keine Cluster-IP-Adresse angeben und die Anmeldedaten für einen vsadmin-Benutzer angeben. SMI-S-Provider unterstützt keine Cluster-IP-Adressen oder Node-Management-IP-Adressen und unterstützt weder Node-Admin noch Node-SVMs.
 
 [NOTE]

@@ -13,8 +13,10 @@ summary: 'Die slp.conf-Konfigurationsdatei bietet zusätzliche Optionen, mit den
 [role="lead"]
 Der `slp.conf` Die Konfigurationsdatei bietet zusätzliche Optionen, mit denen Sie einen Service-Location-Protokoll-Daemon (SLPD)-Server verwalten können.
 
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\cfg`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 
@@ -44,6 +46,7 @@ Aktiviert die Sicherheit für empfangene URLs und Attributlisten.
 
 
 
+.Beispiel
 Im Folgenden finden Sie ein gekürztes Beispiel für `slp.conf` Konfigurationsdatei:
 
 [listing]

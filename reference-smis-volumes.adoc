@@ -13,6 +13,7 @@ summary: Der Befehl smis Volumes führt die traditionellen und flexiblen Volumes
 [role="lead"]
 Der `smis volumes` Mit dem Befehl werden die herkömmlichen und flexiblen Volumes für Storage-Systeme aufgelistet.
 
+.Syntax
 `smis volumes`
 
 `[-t {*http* | *https*}]`
@@ -22,8 +23,10 @@ Der `smis volumes` Mit dem Befehl werden die herkömmlichen und flexiblen Volume
 Für Clustered Data ONTAP müssen Sie den verwenden `smis pools` Befehl anstelle des `smis volumes` Befehl.
 
 ====
+.Standort
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
+.Berechtigungsebene
 Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 .Parameter
@@ -33,6 +36,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+.Beispiel
 Der `smis volumes` Befehl und seine gekürzte Ausgabe:
 
 [listing]
