@@ -1,21 +1,22 @@
 ---
 permalink: reference-new-in-this-release-smis.html 
 sidebar: sidebar 
-keywords: new, release 
-summary: Neu in dieser Version 
+keywords: 'new, release, new in this release, what"s new' 
+summary: Was ist neu in 5.2.7 
 ---
-= Neu in dieser Version
+= Neuerungen in 5.2.7
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
-* Für SMI-S Provider 5.2.5 ist kein Upgrade-Pfad verfügbar.
-* Sie müssen SMI-S Provider 5.2.5 als neue Installation verwenden.
+* Für SMI-S Provider 5.2.7 ist kein Upgrade-Pfad verfügbar.
+* Sie müssen SMI-S Provider 5.2.7 als neue Installation verwenden.
+* Das SnapMirror-Management mit Azure Site Recovery wird in dieser Version des SMI-S-Providers nicht unterstützt.
 
 
-*Für Windows-Benutzer:*
+*Für Windows-Benutzer*
 
 * Diese Version ist nicht kompatibel mit Windows Server 2012 oder System Center Virtual Machine Manager (SCVMM) 2012.
-* SMI-S Provider 5.2.5 unterstützt Windows Server 2016, Windows Server 2019, SCVMM 2016 und SCVMM 2019.
+* SMI-S Provider 5.2.7 unterstützt Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 und SCVMM 2016.
 

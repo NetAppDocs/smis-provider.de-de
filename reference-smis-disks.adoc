@@ -2,7 +2,7 @@
 permalink: reference-smis-disks.html 
 sidebar: sidebar 
 keywords: thesmis, disk, command, display, information, storage, systems 
-summary: Der Befehl Thesmis Disks zeigt Laufwerksinformationen für Speichersysteme an. smis funktioniert nur bei Verwendung mit Data ONTAP 7-Mode Controllern. 
+summary: Der Befehl smis Disks zeigt Datenträgerinformationen für Speichersysteme an. smis Disks funktionieren nur, wenn sie mit ONTAP 7-Mode Controllern verwendet werden. 
 ---
 = smis-Festplatten
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Der Befehl Thesmis Disks zeigt Laufwerksinformationen für Speichersyst
 
 
 [role="lead"]
-Der `smis disks` Mit Befehl werden Festplatteninformationen für Storage-Systeme angezeigt. `smis disks` Nur bei Nutzung mit Data ONTAP 7-Mode Controllern.
+Der `smis disks` Befehl zeigt Festplatteninformationen für Storage-Systeme an. Der `smis disks` Befehl wird nur auf ONTAP 7-Mode Controllern unterstützt.
 
 .Syntax
 smis-Festplatten

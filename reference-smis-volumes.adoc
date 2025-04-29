@@ -20,7 +20,7 @@ Der `smis volumes` Mit dem Befehl werden die herkömmlichen und flexiblen Volume
 
 [NOTE]
 ====
-Für Clustered Data ONTAP müssen Sie den verwenden `smis pools` Befehl anstelle des `smis volumes` Befehl.
+Für ONTAP müssen Sie den Befehl anstelle des `smis volumes` Befehls verwenden `smis pools`.
 
 ====
 .Standort

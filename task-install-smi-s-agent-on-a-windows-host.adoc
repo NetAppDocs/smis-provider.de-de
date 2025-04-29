@@ -1,8 +1,8 @@
 ---
 permalink: task-install-smi-s-agent-on-a-windows-host.html 
 sidebar: sidebar 
-keywords: netapp smi-s provider, software, storage systems, data ontap 
-summary: 'Sie können NetApp SMI-S Provider-Software installieren, sodass Sie Storage-Systeme mit Data ONTAP managen können. Standardmäßig wird die NetApp SMI-S Provider-Software im Verzeichnis C:\Program Files (x86)\NetApp\sbis\pegasus installiert.' 
+keywords: netapp smi-s provider, software, storage systems, ontap 
+summary: 'Sie können die NetApp SMI-S Provider-Software installieren, damit Sie Speichersysteme, auf denen ONTAP ausgeführt wird, managen können. Standardmäßig wird die NetApp SMI-S Provider-Software im Verzeichnis C:\Program Files (x86)\NetApp\sbis\pegasus installiert.' 
 ---
 = Installation des NetApp SMI-S Provider auf einem Windows-Host
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Sie können NetApp SMI-S Provider-Software installieren, sodass Sie St
 
 
 [role="lead"]
-Sie können NetApp SMI-S Provider-Software installieren, sodass Sie Storage-Systeme mit Data ONTAP managen können. Sie können jedoch nicht auf eine frühere Version zurücksetzen oder herunterstufen. Standardmäßig ist die NetApp SMI-S Provider-Software in installiert `C:\Program Files (x86)\NetApp\smis\pegasus` Verzeichnis.
+Sie können die NetApp SMI-S Provider-Software installieren, damit Sie Speichersysteme, auf denen ONTAP ausgeführt wird, managen können. Sie können jedoch nicht auf eine frühere Version zurücksetzen oder herunterstufen. Standardmäßig wird die NetApp SMI-S Provider-Software im Verzeichnis installiert `C:\Program Files (x86)\NetApp\smis\pegasus`.
 
 .Bevor Sie beginnen
 Sie müssen bereits über die folgenden Anmeldedaten und die folgende Software verfügen:

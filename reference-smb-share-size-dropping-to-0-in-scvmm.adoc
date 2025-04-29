@@ -16,7 +16,7 @@ Neue oder bestehende Größe von SMB 3.0-Shares kann im System Center Virtual Ma
 
 * *Ursache*
 +
-Dieses Problem tritt auf, wenn die Neuinitialisierung von Kontingenten aufgrund starker I/O-Vorgänge sehr lange in Data ONTAP dauert, können neue oder bestehende SMB 3.0-Share-Größe in SCVMM auf 0 sinken. Daher können neue VMs nicht auf den neuen oder vorhandenen SMB 3.0 Shares bereitgestellt werden.
+Wenn die erneute Initialisierung von Quota aufgrund hoher I/O-Last in ONTAP viel Zeit in Anspruch nimmt, kann die neue oder bestehende SMB 3.0-Share-Größe in SCVMM auf 0 sinken. Wenn dieses Problem auftritt, können keine neuen VMs auf neuen oder vorhandenen SMB 3.0-Freigaben bereitgestellt werden.
 
 * *Korrekturmaßnahmen*
 +

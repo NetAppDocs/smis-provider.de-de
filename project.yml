@@ -20,13 +20,13 @@ sidebar:
     - title: Neu in dieser Version
       url: "/reference-new-in-this-release-smis.html"
     - title: Nutzung des NetApp SMI-S Provider
-      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+      url: "/reference-uses-of-ontap-smi-s-agent.html"
     - title: Sizing und Performance für NetApp SMI-S-Provider
       url: "/reference-smi-s-agent-sizing-and-performance-information.html"
     - title: NetApp SMI-S Provider-Komponenten
-      url: "/reference-data-ontap-smi-s-agent-components.html"
+      url: "/reference-ontap-smi-s-agent-components.html"
     - title: NetApp SMI-S-Provider-Protokolle
-      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+      url: "/reference-ontap-smi-s-agent-protocols.html"
     - title: Wie NetApp SMI-S Provider mit einem Host interagiert
       url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
     - title: SMI-S-Profile
@@ -43,8 +43,8 @@ sidebar:
       url: "/reference-hardware-requirements.html"
     - title: Erforderliche Lizenzen
       url: "/reference-required-licenses.html"
-    - title: Unterstützte Cluster-Plattformen
-      url: "/reference-supported-platforms.html"
+    - title: NetApp SMI-S Provider-Unterstützung für ONTAP-Systeme
+      url: "/reference-smi-s-support-ontap-systems.html"
     - title: Laden Sie das Softwarepaket NetApp SMI-S Provider herunter
       url: "/task-download-smi-s-provider.html"
   - title: Installation des NetApp SMI-S Provider
@@ -111,8 +111,8 @@ sidebar:
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: Geben Sie den konkreten Wert für die Einsatzdauer an
       url: "/task-specify-the-concrete-job-lifetime-value.html"
-    - title: Geben Sie den ONTAPI-Timeout-Wert an
-      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: Geben Sie den Wert für die Zeitüberschreitung beim ONTAP-API-Aufruf an
+      url: "/task-specify-the-ontap-api-call-timeout-value.html"
     - title: Geben Sie die maximale Anzahl von Threads pro Nachrichtendienstwarteschlange
         an
       url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
@@ -250,4 +250,4 @@ sidebar:
         kommunizieren
       url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
   - title: Rechtliche Hinweise
-    url: "/reference-legal-notices.html"
+    url: "/legal-notices.html"

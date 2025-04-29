@@ -13,4 +13,4 @@ summary: NetApp SMI-S Provider vereinfacht das Managen und Überwachen von Stora
 [role="lead"]
 NetApp SMI-S Provider vereinfacht das Managen und Überwachen von Storage-Systemen sowie das Managen von LUNs und Volumes von Storage-Systemen.
 
-Mithilfe von NetApp SMI-S-Provider können Sie Storage-Controller mithilfe von System Center 2016 - Virtual Machine Manager oder System Center 2016 - Virtual Machine Manager managen.
+Sie können NetApp SMI-S Provider verwenden, um Speichercontroller mithilfe von System Center 2016, 2019, 2022 und 2025 zu verwalten.
