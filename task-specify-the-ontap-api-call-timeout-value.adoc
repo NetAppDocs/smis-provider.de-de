@@ -1,5 +1,5 @@
 ---
-permalink: task-specify-the-ontapi-timeout-value.html 
+permalink: task-specify-the-ontap-api-call-timeout-value.html 
 sidebar: sidebar 
 keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
 summary: SMI-S-Provider ruft ONTAP-API auf Storage-Systeme ab. Standardmäßig beträgt das ONTAP-API-Anruflimit 300 Sekunden. Sie können das Timeout auf einen Wert von 60 bis 300 Sekunden einstellen. 
