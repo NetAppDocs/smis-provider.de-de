@@ -25,7 +25,7 @@ Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 Der `slp.conf` Mit der Konfigurationsdatei können Sie die Anzahl der Schnittstellen ändern, die ein Host auf SLP-Anforderungen abhört, und die Anzahl der IP-Adressen, die ein Host für Multicasting verwendet.
 
-Verwenden Sie einen Texteditor, um das zu öffnen `slp.conf`.
+Öffnen Sie die Datei mit einem Texteditor. `slp.conf` Datei.
 
 .Parameter
 * *`interfaces`*
@@ -51,7 +51,6 @@ Im Folgenden finden Sie ein gekürztes Beispiel für `slp.conf` Konfigurationsda
 
 [listing]
 ----
-
 ################################################################
 # OpenSLP configuration file
 # Format and contents conform to specification in IETF RFC 2614 so
