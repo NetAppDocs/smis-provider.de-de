@@ -11,11 +11,15 @@ summary: Standardmäßig ist die SSL-Authentifizierung für den CIM-Server aktiv
 
 
 [role="lead"]
-Standardmäßig ist die SSL-Authentifizierung für den CIM-Server aktiviert. Während der Installation des SMI-S Provider wird im ein selbstsigniertes Zertifikat für den CIM-Server installiert `pegasus` Verzeichnis. Sie können Ihr eigenes selbstsigniertes Zertifikat generieren und es anstelle des Standardzertifikats verwenden.
+Standardmäßig ist die SSL-Authentifizierung für den CIM-Server aktiviert. Während der Installation des SMI-S-Providers wird ein selbstsigniertes Zertifikat für den CIM-Server installiert. `pegasus` Verzeichnis. Sie müssen Ihr eigenes selbstsigniertes Zertifikat erstellen, anstatt das Standardzertifikat zu verwenden.
+
+
+CAUTION: Bei der Installation des SMI-S-Providers ist das standardmäßig installierte selbstsignierte Zertifikat veraltet. Als Folge davon schlägt die SSL-Verbindung zum SMI-S-Provider über die Option *Speichergeräte hinzufügen* im System Center Virtual Machine Manager (SCVMM) fehl. Sie müssen ein selbstsigniertes Zertifikat für den CIM-Server generieren und anschließend den SMI-S-Provider-Dienst neu starten. Weitere Informationen finden Sie unter link:https://kb.netapp.com/data-mgmt/SMI-S/SMI-S_Issues/CSMIS-3["Der NetApp Knowledge Base-Artikel: „CSMIS-3: cimom.cert in NetApp SMI-S Provider 5.2.7 ist zum Zeitpunkt der Installation abgelaufen.“"^]
 
 .Bevor Sie beginnen
 * Sie müssen sich bereits als Administrator angemeldet haben.
 * Sie müssen bereits auf SMI-S Provider zugreifen.
+* Sie müssen OpenSSL auf Ihrem Windows-Rechner heruntergeladen und installiert haben.
 
 
 .Schritte
@@ -63,6 +67,10 @@ Die Variable wird festgelegt, wenn Sie eine neue Eingabeaufforderung-Sitzung öf
 Sie können eine andere Anzahl von Tagen angeben, für die das Zertifikat gültig ist.
 
 . Kopieren Sie die `cimom.key` Und `cimom.cert` Dateien auf `pegasus` Verzeichnis (Windows: `C:\Program Files (x86)\NetApp\smis\pegasus`).
+. Starten Sie den SMI-S-Provider-Dienst neu:
++
+`smis cimserver restart`
+
 
 
 
