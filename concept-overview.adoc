@@ -17,7 +17,7 @@ Der NetApp SMI-S Provider ist eine befehlsbasierte Schnittstelle, die Plattforme
 
 NetApp SMI-S-Provider verwendet Schemata, die von zwei Unternehmen standardisiert wurden:
 
-* http://www.dmtf.org/home["Distributed Management Task Force (DMTF)"^]
+* http://www.dmtf.org["Distributed Management Task Force (DMTF)"^]
 * http://www.snia.org/home["Storage Networking Industry Association (SNIA)"^]
 
 
