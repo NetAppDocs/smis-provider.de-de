@@ -56,6 +56,7 @@ Zu verwendenden Protokoll: HTTPS (Standard) oder HTTP
 
 
 
+[[storage-system-agent-and-agent-client-protocol]]
 == Storage-System-Agent und Agent-Client-Protokoll
 
 Der `smis add` Und `smis addsecure` Befehle bestimmen das zwischen dem Speichersystem und dem Provider verwendete Protokoll. Der `[-t {*http* | *https*}]` Parameter bestimmt das Protokoll, das zwischen dem Provider und dem Client verwendet wird.

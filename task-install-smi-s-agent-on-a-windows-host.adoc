@@ -33,6 +33,7 @@ Dieses Installationsverfahren enthält eine neue Installation.
 
 
 
+[[result]]
 == Ergebnis
 
 NetApp SMI-S Provider wird automatisch gegen Ende des Installationsprozesses gestartet.

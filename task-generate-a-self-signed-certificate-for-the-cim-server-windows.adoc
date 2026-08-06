@@ -75,6 +75,7 @@ Sie können eine andere Anzahl von Tagen angeben, für die das Zertifikat gülti
 
 
 
+[[result]]
 == Ergebnis
 
 Der Datumsbereich des Zertifikats beginnt am aktuellen Datum und wird für die angegebene Anzahl von Tagen ausgeführt.

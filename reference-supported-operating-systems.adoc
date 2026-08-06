@@ -35,6 +35,7 @@ Die Microsoft Visual C++ 2010-Laufzeitbibliotheken werden während der Installat
 |===
 
 
+[[ensure-the-provider-host-machine-meets-the-specifications]]
 == Stellen Sie sicher, dass der Hostrechner des Anbieters die Spezifikationen erfüllt.
 
 Zum Ausführen von SMI-S Provider muss der Provider-Hostcomputer die folgenden Spezifikationen erfüllen:

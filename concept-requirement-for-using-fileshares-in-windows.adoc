@@ -19,6 +19,7 @@ Mit System Center 2016 Virtual Machine Manager (SCVMM) können Sie virtuelle Mas
 
 
 
+[[creating-a-volume-to-be-used-for-cifs-shares-and-scvmm]]
 == Erstellen eines Volumes für CIFS-Freigaben und SCVMM
 
 Wenn ein Volume erstellt wird, das für CIFS Shares und System Center Virtual Machine Manager (SCVMM) verwendet werden soll, muss es sich um den NTFS-Typ handeln. Geben Sie zum Erstellen des Volumes mit NTFS Folgendes ein: `_vol create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size<volume_size> -security-style ntfs_`

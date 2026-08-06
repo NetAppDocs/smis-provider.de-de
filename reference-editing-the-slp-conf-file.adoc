@@ -21,6 +21,7 @@ Ein Benutzer mit einem gültigen Benutzernamen und Kennwort
 
 
 
+[[description]]
 == Beschreibung
 
 Der `slp.conf` Mit der Konfigurationsdatei können Sie die Anzahl der Schnittstellen ändern, die ein Host auf SLP-Anforderungen abhört, und die Anzahl der IP-Adressen, die ein Host für Multicasting verwendet.
