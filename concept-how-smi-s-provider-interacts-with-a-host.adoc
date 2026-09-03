@@ -15,4 +15,4 @@ Wenn eine Client-Anwendung auf einem Host den CIMOM-Server mithilfe von SLP (CIM
 
 Die folgende Abbildung zeigt die Interaktion von NetApp SMI-S Provider mit einem WBEM-Management-Client, wenn SMI-S Provider eine Abfrage oder einen Befehl erhält.
 
-image::../media/smi_s_agent_and_host_interaction.gif[smi S-Agent- und Host-Interaktion]
+image::../media/smi_s_agent_and_host_interaction.gif[Ein Diagramm, das einen Host zeigt, der Anfragen an den SMI-S Provider CIMOM, das Repository, die Provider DLLs und das Speichersystem sendet.]

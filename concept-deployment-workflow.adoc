@@ -13,4 +13,4 @@ summary: Bevor Sie Ihre Speichersysteme mit SMI-S Provider verwalten und überwa
 [role="lead"]
 Bevor Sie Ihre Speichersysteme mit SMI-S Provider verwalten und überwachen können, müssen Sie die SMI-S Provider-Software installieren und Ihre vorläufige Konfiguration überprüfen.
 
-image::../media/smi_s_provider_workflow.gif[workflow für smi-Provider]
+image::../media/smi_s_provider_workflow.gif[Ein Diagramm, das die Bereitstellung des SMI-S Provider, die Validierung der Vorkonfiguration und die Arbeitsabläufe für Verwaltungsaufgaben zeigt]
