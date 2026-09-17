@@ -11,6 +11,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :pp: &#43;&#43;
 
 
+[role="lead"]
+NetApp SMI-S Provider kann unter Windows auf Laufzeitbibliotheksprobleme stoßen. Das erforderliche Microsoft Visual C{pp} Redistributable Package behebt diese Probleme.
+
 * *Ausgabe*
 +
 Es treten Probleme mit der Laufzeitbibliothek auf.

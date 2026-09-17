@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider kann keine Verbindung zu `localhost:5988` herstellen, wenn die erforderlichen Verbindungseinstellungen deaktiviert oder falsch konfiguriert sind oder wenn der Provider nicht mehr reagiert. Die Verbindungseinstellungen sollten überprüft und der Provider neu gestartet werden, um das Problem zu beheben.
+
 * *Nachricht*
 +
 `Cannot connect to localhost:5988. Connection failed. Trying to connect to localhost:5988`

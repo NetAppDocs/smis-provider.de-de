@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Es ist nicht möglich, ein NetApp Speichersystem zum NetApp SMI-S Provider hinzuzufügen, wenn dieses System HTTP oder HTTPS auf einem nicht standardmäßigen Port verwendet. Das Speichersystem kann hinzugefügt werden, indem der nicht standardmäßige Port explizit angegeben wird.
+
 * *Ausgabe*
 +
 Sie können kein Speichersystem hinzufügen, auf dem HTTP oder HTTPS auf einem nicht standardmäßigen Port ausgeführt werden.

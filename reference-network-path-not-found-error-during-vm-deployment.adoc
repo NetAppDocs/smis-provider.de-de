@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Eine  `Network path not found`Meldung während der VM-Bereitstellung auf einer SMB-Freigabe weist typischerweise auf ein DNS-Problem hin, bei dem der Host noch keinen Eintrag auf dem DNS-Server hat. Dieses Problem lässt sich durch Aktualisierung des DNS-Eintrags oder der Hostdatei beheben.
+
 * *Nachricht*
 +
 `Network path not found`

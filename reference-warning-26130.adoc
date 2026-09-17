@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Warnung 26130 tritt auf, wenn Speicherkapazität einer Hostgruppe zugewiesen wird, in der keiner der Hosts Zugriff auf das Storage-Array hat, wodurch das Platzieren virtueller Maschinen auf dem Speichersystem verhindert wird. Jedem Host muss der erforderliche Zugriff gewährt werden, um diese Warnung zu beheben.
+
 
 
 [[message]]

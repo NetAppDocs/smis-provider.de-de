@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Die  `Filer return: No ontap element in response`Meldung tritt auf, wenn ein ONTAP API-Aufruf des NetApp SMI-S Provider eine Zeitüberschreitung verursacht. Eine Erhöhung des Zeitüberschreitungswerts kann dieses Problem beheben.
+
 * *Nachricht*
 +
 `Filer return: No ontap element in response`.

@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Die Größe einer SMB 3.0-Freigabe kann im System Center Virtual Machine Manager (SCVMM) auf 0 sinken, wenn die Quotenreinitialisierung in ONTAP aufgrund hoher I/O-Last lange dauert, wodurch die Bereitstellung neuer VMs verhindert wird. Das Problem kann durch Anpassen der Quoteneinstellungen gelöst werden.
+
 * *Ausgabe*
 +
 Neue oder bestehende Größe von SMB 3.0-Shares kann im System Center Virtual Machine Manager (SCVMM) auf 0 sinken.

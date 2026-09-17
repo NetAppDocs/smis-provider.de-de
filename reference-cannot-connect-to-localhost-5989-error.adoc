@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider kann keine Verbindung zu `localhost:5989`herstellen, wenn HTTPS-Verbindungen deaktiviert sind, der HTTPS-Port falsch konfiguriert ist oder der Provider nicht mehr reagiert. Die HTTPS-Verbindungseinstellungen sollten überprüft und der Provider neu gestartet werden, um das Problem zu beheben.
+
 * *Nachricht*
 +
 `Cannot connect to localhost:5989. Connection failed. Trying to connect to localhost:5989`

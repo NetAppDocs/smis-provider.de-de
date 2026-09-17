@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider kann in einer Windows-Umgebung gelegentlich abstürzen. Die zum Zeitpunkt des Absturzes erstellten Dump-, Protokoll- und Trace-Dateien sollten gesammelt und zur weiteren Analyse an den technischen Support gesendet werden.
+
 * *Ausgabe*
 +
 SMI-S Provider stürzt in Windows ab.

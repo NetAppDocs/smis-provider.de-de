@@ -10,6 +10,9 @@ summary: Probleme bei NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider antwortet möglicherweise nicht auf eine Abfrage, wenn dem CIMOM-Repository kein Speichersystem hinzugefügt wurde. Es sollte überprüft werden, ob ein Speichersystem registriert ist, und bei Bedarf eines hinzugefügt werden.
+
 * *Ausgabe*
 +
 Der Server reagiert nicht bei Abfrage.
